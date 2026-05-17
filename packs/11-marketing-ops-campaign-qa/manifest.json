@@ -1,0 +1,36 @@
+{
+  "title": "Marketing Ops Campaign QA Skill Pack",
+  "slug": "11-marketing-ops-campaign-qa",
+  "owner": "Marketing Operations",
+  "version": "0.1",
+  "status": "draft-ready-for-review",
+  "format": "vibesec-gtm-skill-pack-folder-v1",
+  "skill_format": "Agent Skills directory with case-sensitive SKILL.md",
+  "skills": [
+    {
+      "name": "campaign-intake-safety-check",
+      "title": "Campaign intake safety check",
+      "path": "skills/campaign-intake-safety-check/SKILL.md"
+    },
+    {
+      "name": "segment-and-consent-qa",
+      "title": "Segment and consent QA",
+      "path": "skills/segment-and-consent-qa/SKILL.md"
+    },
+    {
+      "name": "tracking-and-personalization-qa",
+      "title": "Tracking and personalization QA",
+      "path": "skills/tracking-and-personalization-qa/SKILL.md"
+    },
+    {
+      "name": "launch-approval-packet-builder",
+      "title": "Launch approval packet builder",
+      "path": "skills/launch-approval-packet-builder/SKILL.md"
+    },
+    {
+      "name": "post-send-evidence-summary",
+      "title": "Post-send evidence summary",
+      "path": "skills/post-send-evidence-summary/SKILL.md"
+    }
+  ]
+}

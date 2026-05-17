@@ -1,0 +1,41 @@
+{
+  "title": "Outbound BDR Response Learning Skill Pack",
+  "slug": "13-outbound-bdr-response-learning",
+  "owner": "Outbound BDR",
+  "version": "0.1",
+  "status": "draft-ready-for-review",
+  "format": "vibesec-gtm-skill-pack-folder-v1",
+  "skill_format": "Agent Skills directory with case-sensitive SKILL.md",
+  "skills": [
+    {
+      "name": "outbound-input-safety-check",
+      "title": "Outbound input safety check",
+      "path": "skills/outbound-input-safety-check/SKILL.md"
+    },
+    {
+      "name": "icp-and-trigger-fit-gate",
+      "title": "ICP and trigger-fit gate",
+      "path": "skills/icp-and-trigger-fit-gate/SKILL.md"
+    },
+    {
+      "name": "message-claim-and-evidence-qa",
+      "title": "Message claim and evidence QA",
+      "path": "skills/message-claim-and-evidence-qa/SKILL.md"
+    },
+    {
+      "name": "sequence-and-channel-compliance-qa",
+      "title": "Sequence and channel compliance QA",
+      "path": "skills/sequence-and-channel-compliance-qa/SKILL.md"
+    },
+    {
+      "name": "reply-triage-and-safe-follow-up-builder",
+      "title": "Reply triage and safe follow-up builder",
+      "path": "skills/reply-triage-and-safe-follow-up-builder/SKILL.md"
+    },
+    {
+      "name": "response-rate-experiment-and-learning-loop",
+      "title": "Response-rate experiment and learning loop",
+      "path": "skills/response-rate-experiment-and-learning-loop/SKILL.md"
+    }
+  ]
+}

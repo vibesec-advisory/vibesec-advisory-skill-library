@@ -1,0 +1,36 @@
+{
+  "title": "RFP and RFI Response Skill Pack",
+  "slug": "05-rfp-rfi-response",
+  "owner": "Sales Engineering, Proposal Teams, and Deal Desk",
+  "version": "0.1",
+  "status": "draft-ready-for-review",
+  "format": "vibesec-gtm-skill-pack-folder-v1",
+  "skill_format": "Agent Skills directory with case-sensitive SKILL.md",
+  "skills": [
+    {
+      "name": "rfp-intake-safety-check",
+      "title": "RFP intake safety check",
+      "path": "skills/rfp-intake-safety-check/SKILL.md"
+    },
+    {
+      "name": "question-classifier",
+      "title": "Question classifier",
+      "path": "skills/question-classifier/SKILL.md"
+    },
+    {
+      "name": "approved-answer-drafter",
+      "title": "Approved answer drafter",
+      "path": "skills/approved-answer-drafter/SKILL.md"
+    },
+    {
+      "name": "sme-review-packet",
+      "title": "SME review packet",
+      "path": "skills/sme-review-packet/SKILL.md"
+    },
+    {
+      "name": "submission-qa",
+      "title": "Submission QA",
+      "path": "skills/submission-qa/SKILL.md"
+    }
+  ]
+}
