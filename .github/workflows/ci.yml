@@ -1,0 +1,134 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate skill library
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build generated artifacts
+        run: python3 scripts/build_skill_artifacts.py
+
+      - name: Run static quality checks
+        run: python3 evals/run_static_quality_checks.py
+
+      - name: Enforce naming hygiene
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import json
+          import re
+          import sys
+          import zipfile
+
+          root = Path.cwd()
+          failures: list[str] = []
+
+          legacy_term = 'p' + 'ack'
+          forbidden_paths = [
+              legacy_term + 's',
+              'source-' + legacy_term + 's',
+              'P' + 'ACK_CATALOG.md',
+              'evals/gtm_skill_' + legacy_term + '_evals.json',
+              'scripts/build_skill_' + legacy_term + '_artifacts.py',
+          ]
+          for rel in forbidden_paths:
+              if (root / rel).exists():
+                  failures.append(f'forbidden legacy path exists: {rel}')
+
+          for base in ['SKILLS', 'source-skills', 'dist']:
+              for path in (root / base).glob('*'):
+                  if re.match(r'\d{2}-', path.name):
+                      failures.append(f'numeric prefix is not allowed: {path.relative_to(root)}')
+
+          text_files = [
+              p for p in root.rglob('*')
+              if '.git' not in p.parts
+              and p.is_file()
+              and p.suffix.lower() in {'.md', '.py', '.json', '.yml', '.yaml', '.txt'}
+          ]
+          legacy_word = re.compile(rf'\b{legacy_term}(?:s|ed|ing)?\b', re.IGNORECASE)
+          bad_phrases = [
+              'Skill ' + 'Skill',
+              'skill ' + 'skill',
+              'Skill ' + 'skill',
+              'skill' + 'et',
+          ]
+          for path in text_files:
+              text = path.read_text(encoding='utf-8')
+              if legacy_word.search(text):
+                  failures.append(f'legacy workflow-bundle wording remains in {path.relative_to(root)}')
+              if any(phrase in text for phrase in bad_phrases):
+                  failures.append(f'bad skill wording remains in {path.relative_to(root)}')
+
+          eval_path = root / 'evals' / 'gtm_skill_evals.json'
+          data = json.loads(eval_path.read_text(encoding='utf-8'))
+          for scenario in data.get('scenarios', []):
+              for key in ['id', 'skill']:
+                  value = str(scenario.get(key, ''))
+                  if re.match(r'\d{2}-', value):
+                      failures.append(f'eval scenario {key} has numeric prefix: {value}')
+
+          for zip_path in (root / 'dist').glob('*.zip'):
+              if re.match(r'\d{2}-', zip_path.name):
+                  failures.append(f'zip artifact has numeric prefix: {zip_path.name}')
+              with zipfile.ZipFile(zip_path) as archive:
+                  roots = {name.split('/')[0] for name in archive.namelist() if '/' in name}
+              for archive_root in roots:
+                  if re.match(r'\d{2}-', archive_root):
+                      failures.append(f'zip root has numeric prefix: {zip_path.name}:{archive_root}')
+
+          if failures:
+              print('Naming hygiene failed:')
+              for failure in failures:
+                  print(f'- {failure}')
+              sys.exit(1)
+
+          print('Naming hygiene passed')
+          PY
+
+      - name: Verify generated artifacts are committed
+        run: |
+          if ! git diff --quiet -- . ':!*.zip'; then
+            echo 'Generated text artifacts are out of date. Run:'
+            echo '  python3 scripts/build_skill_artifacts.py'
+            echo '  python3 evals/run_static_quality_checks.py'
+            git diff --stat -- . ':!*.zip'
+            exit 1
+          fi
+          if ! git diff --quiet -- dist/*.zip; then
+            echo 'Generated zip artifacts are out of date. Run:'
+            echo '  python3 scripts/build_skill_artifacts.py'
+            git diff --stat -- dist/*.zip
+            exit 1
+          fi
+
+      - name: Upload generated zip artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: vibesec-gtm-workflow-skills
+          path: dist/*.zip
+          if-no-files-found: error
+          retention-days: 14
