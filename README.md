@@ -1,22 +1,24 @@
 # VibeSec Advisory Skill Library
 
+[![CI](https://github.com/vibesec-advisory/vibesec-advisory-skill-library/actions/workflows/ci.yml/badge.svg)](https://github.com/vibesec-advisory/vibesec-advisory-skill-library/actions/workflows/ci.yml)
+
 Free AI workflow skill libraries for GTM teams.
 
-These are not prompt packs. They are role-based skill libraries for repeatable GTM workflows with clear inputs, review steps, approval gates, output schemas, and eval coverage.
+These are not prompt dumps. They are role-based skill libraries for repeatable GTM workflows with clear inputs, review steps, approval gates, output schemas, and eval coverage.
 
 The public libraries are generic by design. They show what good AI workflow skills look like before they are adapted to a specific company, tool stack, data source, or connector model.
 
 ## What is included
 
-- 13 GTM AI workflow skill packs
+- 13 GTM AI workflow skill libraries
 - 67 Agent Skills with `SKILL.md` files
-- Shared safety, output schema, and pack context references
+- Shared safety, output schema, and skill context references
 - Source markdown for editing and regeneration
 - Zip artifacts for direct download
-- Static eval scenarios for every pack
+- Static eval scenarios for every skill
 - Build and quality-check scripts
 
-## Skill packs
+## Skills
 
 1. Sales Engineer Proof of Concept
 2. Account Executive Discovery
@@ -32,45 +34,45 @@ The public libraries are generic by design. They show what good AI workflow skil
 12. Sales Enablement Playbook Refresh
 13. Outbound BDR Response Learning
 
-See [`PACK_CATALOG.md`](PACK_CATALOG.md) for the full catalog.
+See [`SKILL_CATALOG.md`](SKILL_CATALOG.md) for the full catalog.
 
-## How to use a pack
+## How to use a skill
 
-Each pack lives in `packs/<pack-slug>/`.
+Each workflow skill lives in `SKILLS/<skill-slug>/`.
 
 ```text
-packs/<pack-slug>/
+SKILLS/<skill-slug>/
   README.md
   manifest.json
   references/
-    pack-operating-guide.md
+    skill-operating-guide.md
   skills/
     <skill-name>/
       SKILL.md
       references/
         safety-rules.md
         output-schema.md
-        pack-context.md
+        skill-context.md
 ```
 
 Each skill is designed to be narrow enough to run independently and connected enough to support the larger workflow.
 
 If your AI tool supports Agent Skills, upload or install the individual skill folders under `skills/`. Some tools expect one skill per zip. If that is the case, zip each folder under `skills/` separately.
 
-If you want the full product bundle, use the corresponding zip file in `dist/`.
+If you want the full downloadable skill library, use the corresponding zip file in `dist/`.
 
 ## Build and validate
 
 Run from the repo root:
 
 ```bash
-python3 scripts/build_skill_pack_artifacts.py
+python3 scripts/build_skill_artifacts.py
 python3 evals/run_static_quality_checks.py
 ```
 
-The build script regenerates `packs/` and `dist/` from `source-packs/`.
+The build script regenerates `SKILLS/` and `dist/` from `source-skills/`.
 
-The static quality check verifies pack counts, required skill files, required safety language, eval scenario coverage, and zip artifacts.
+The static quality check verifies workflow skill counts, required Agent Skill files, required safety language, eval scenario coverage, and zip artifacts.
 
 ## Why the public library is free
 

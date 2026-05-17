@@ -1,0 +1,36 @@
+{
+  "title": "Renewal Risk Brief Skill",
+  "slug": "renewal-risk-brief",
+  "owner": "Account Management, Customer Success, and Revenue Leadership",
+  "version": "0.1",
+  "status": "draft-ready-for-review",
+  "format": "vibesec-gtm-skill-skill-folder-v1",
+  "skill_format": "Agent Skills directory with case-sensitive SKILL.md",
+  "skills": [
+    {
+      "name": "renewal-evidence-intake",
+      "title": "Renewal evidence intake",
+      "path": "skills/renewal-evidence-intake/SKILL.md"
+    },
+    {
+      "name": "risk-level-classifier",
+      "title": "Risk level classifier",
+      "path": "skills/risk-level-classifier/SKILL.md"
+    },
+    {
+      "name": "save-plan-options-builder",
+      "title": "Save plan options builder",
+      "path": "skills/save-plan-options-builder/SKILL.md"
+    },
+    {
+      "name": "customer-safe-talk-track",
+      "title": "Customer-safe talk track",
+      "path": "skills/customer-safe-talk-track/SKILL.md"
+    },
+    {
+      "name": "escalation-brief",
+      "title": "Escalation brief",
+      "path": "skills/escalation-brief/SKILL.md"
+    }
+  ]
+}

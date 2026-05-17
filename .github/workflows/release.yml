@@ -1,0 +1,56 @@
+name: Release
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    name: Publish skill library release
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build generated artifacts
+        run: python3 scripts/build_skill_artifacts.py
+
+      - name: Run static quality checks
+        run: python3 evals/run_static_quality_checks.py
+
+      - name: Verify generated artifacts are committed
+        run: git diff --exit-code
+
+      - name: Upload release artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: vibesec-gtm-workflow-skills-${{ github.ref_name }}
+          path: dist/*.zip
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Create GitHub Release for tags
+        if: startsWith(github.ref, 'refs/tags/')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${GITHUB_REF_NAME}" dist/*.zip \
+            --title "${GITHUB_REF_NAME}" \
+            --generate-notes \
+            --verify-tag

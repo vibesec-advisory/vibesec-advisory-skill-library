@@ -1,0 +1,36 @@
+{
+  "title": "Sales to Implementation Handoff Skill",
+  "slug": "sales-to-implementation-handoff",
+  "owner": "Sales, Solutions, and Implementation Teams",
+  "version": "0.1",
+  "status": "draft-ready-for-review",
+  "format": "vibesec-gtm-skill-skill-folder-v1",
+  "skill_format": "Agent Skills directory with case-sensitive SKILL.md",
+  "skills": [
+    {
+      "name": "handoff-input-safety-check",
+      "title": "Handoff input safety check",
+      "path": "skills/handoff-input-safety-check/SKILL.md"
+    },
+    {
+      "name": "confirmed-commitment-extractor",
+      "title": "Confirmed commitment extractor",
+      "path": "skills/confirmed-commitment-extractor/SKILL.md"
+    },
+    {
+      "name": "implementation-risk-mapper",
+      "title": "Implementation risk mapper",
+      "path": "skills/implementation-risk-mapper/SKILL.md"
+    },
+    {
+      "name": "kickoff-agenda-builder",
+      "title": "Kickoff agenda builder",
+      "path": "skills/kickoff-agenda-builder/SKILL.md"
+    },
+    {
+      "name": "crm-safe-handoff-summary",
+      "title": "CRM-safe handoff summary",
+      "path": "skills/crm-safe-handoff-summary/SKILL.md"
+    }
+  ]
+}

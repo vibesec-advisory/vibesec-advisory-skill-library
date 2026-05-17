@@ -1,0 +1,36 @@
+{
+  "title": "Sales Enablement Playbook Refresh Skill",
+  "slug": "sales-enablement-playbook-refresh",
+  "owner": "Sales Enablement",
+  "version": "0.1",
+  "status": "draft-ready-for-review",
+  "format": "vibesec-gtm-skill-skill-folder-v1",
+  "skill_format": "Agent Skills directory with case-sensitive SKILL.md",
+  "skills": [
+    {
+      "name": "playbook-inventory-and-freshness-audit",
+      "title": "Playbook inventory and freshness audit",
+      "path": "skills/playbook-inventory-and-freshness-audit/SKILL.md"
+    },
+    {
+      "name": "approved-claim-and-source-mapper",
+      "title": "Approved claim and source mapper",
+      "path": "skills/approved-claim-and-source-mapper/SKILL.md"
+    },
+    {
+      "name": "role-play-scenario-builder",
+      "title": "Role-play scenario builder",
+      "path": "skills/role-play-scenario-builder/SKILL.md"
+    },
+    {
+      "name": "manager-coaching-reinforcement-builder",
+      "title": "Manager coaching reinforcement builder",
+      "path": "skills/manager-coaching-reinforcement-builder/SKILL.md"
+    },
+    {
+      "name": "adoption-feedback-loop",
+      "title": "Adoption feedback loop",
+      "path": "skills/adoption-feedback-loop/SKILL.md"
+    }
+  ]
+}

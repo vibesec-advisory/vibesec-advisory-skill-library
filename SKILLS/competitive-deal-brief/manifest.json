@@ -1,0 +1,36 @@
+{
+  "title": "Competitive Deal Brief Skill",
+  "slug": "competitive-deal-brief",
+  "owner": "Account Executives, Product Marketing, and Sales Managers",
+  "version": "0.1",
+  "status": "draft-ready-for-review",
+  "format": "vibesec-gtm-skill-skill-folder-v1",
+  "skill_format": "Agent Skills directory with case-sensitive SKILL.md",
+  "skills": [
+    {
+      "name": "competitive-mention-intake",
+      "title": "Competitive mention intake",
+      "path": "skills/competitive-mention-intake/SKILL.md"
+    },
+    {
+      "name": "buyer-requirement-mapper",
+      "title": "Buyer requirement mapper",
+      "path": "skills/buyer-requirement-mapper/SKILL.md"
+    },
+    {
+      "name": "approved-talk-track-builder",
+      "title": "Approved talk track builder",
+      "path": "skills/approved-talk-track-builder/SKILL.md"
+    },
+    {
+      "name": "internal-deal-coaching-brief",
+      "title": "Internal deal coaching brief",
+      "path": "skills/internal-deal-coaching-brief/SKILL.md"
+    },
+    {
+      "name": "competitive-qa",
+      "title": "Competitive QA",
+      "path": "skills/competitive-qa/SKILL.md"
+    }
+  ]
+}

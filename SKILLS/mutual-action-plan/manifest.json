@@ -1,0 +1,36 @@
+{
+  "title": "Mutual Action Plan Skill",
+  "slug": "mutual-action-plan",
+  "owner": "Account Executives and Sales Managers",
+  "version": "0.1",
+  "status": "draft-ready-for-review",
+  "format": "vibesec-gtm-skill-skill-folder-v1",
+  "skill_format": "Agent Skills directory with case-sensitive SKILL.md",
+  "skills": [
+    {
+      "name": "milestone-intake-and-confirmation-check",
+      "title": "Milestone intake and confirmation check",
+      "path": "skills/milestone-intake-and-confirmation-check/SKILL.md"
+    },
+    {
+      "name": "map-builder",
+      "title": "MAP builder",
+      "path": "skills/map-builder/SKILL.md"
+    },
+    {
+      "name": "approval-gate-mapper",
+      "title": "Approval gate mapper",
+      "path": "skills/approval-gate-mapper/SKILL.md"
+    },
+    {
+      "name": "map-risk-and-blocker-brief",
+      "title": "MAP risk and blocker brief",
+      "path": "skills/map-risk-and-blocker-brief/SKILL.md"
+    },
+    {
+      "name": "buyer-facing-map-recap",
+      "title": "Buyer-facing MAP recap",
+      "path": "skills/buyer-facing-map-recap/SKILL.md"
+    }
+  ]
+}

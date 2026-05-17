@@ -1,0 +1,36 @@
+{
+  "title": "Strategic Account Research Brief Skill",
+  "slug": "strategic-account-research-brief",
+  "owner": "Enterprise Sales and SDR Leadership",
+  "version": "0.1",
+  "status": "draft-ready-for-review",
+  "format": "vibesec-gtm-skill-skill-folder-v1",
+  "skill_format": "Agent Skills directory with case-sensitive SKILL.md",
+  "skills": [
+    {
+      "name": "source-intake-and-confidence-grading",
+      "title": "Source intake and confidence grading",
+      "path": "skills/source-intake-and-confidence-grading/SKILL.md"
+    },
+    {
+      "name": "account-snapshot-builder",
+      "title": "Account snapshot builder",
+      "path": "skills/account-snapshot-builder/SKILL.md"
+    },
+    {
+      "name": "persona-pain-map",
+      "title": "Persona pain map",
+      "path": "skills/persona-pain-map/SKILL.md"
+    },
+    {
+      "name": "safe-outreach-angle-builder",
+      "title": "Safe outreach angle builder",
+      "path": "skills/safe-outreach-angle-builder/SKILL.md"
+    },
+    {
+      "name": "research-brief-qa",
+      "title": "Research brief QA",
+      "path": "skills/research-brief-qa/SKILL.md"
+    }
+  ]
+}

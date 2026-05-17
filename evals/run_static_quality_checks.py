@@ -8,16 +8,16 @@ import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-PACKS = ROOT / "packs"
-SOURCE = ROOT / "source-packs"
+SKILLS = ROOT / "SKILLS"
+SOURCE_SKILLS = ROOT / "source-skills"
 DIST = ROOT / "dist"
-EVALS = ROOT / "evals" / "gtm_skill_pack_evals.json"
+EVALS = ROOT / "evals" / "gtm_skill_evals.json"
 
 REQUIRED_SKILL_FILES = [
     "SKILL.md",
     "references/safety-rules.md",
     "references/output-schema.md",
-    "references/pack-context.md",
+    "references/skill-context.md",
 ]
 
 REQUIRED_SKILL_TERMS = [
@@ -31,9 +31,9 @@ REQUIRED_SKILL_TERMS = [
     "approval triggers",
 ]
 
-REQUIRED_SOURCE_TERMS = [
+REQUIRED_SOURCE_SKILLS_TERMS = [
     "Operator run sheet",
-    "Pack skill library",
+    "Skill library",
     "Input contract",
     "Skill-specific guardrails",
     "Failure reason:",
@@ -93,50 +93,50 @@ def validate_skill(skill_dir: Path, failures: list[str]) -> None:
     fail_if("Use when use when" in text, failures, f"{skill_file}: duplicated trigger phrase")
 
 
-def validate_pack(pack_dir: Path, failures: list[str]) -> None:
-    fail_if(not (pack_dir / "README.md").exists(), failures, f"{pack_dir.name}: missing README.md")
-    manifest_path = pack_dir / "manifest.json"
-    fail_if(not manifest_path.exists(), failures, f"{pack_dir.name}: missing manifest.json")
-    fail_if(not (pack_dir / "references" / "pack-operating-guide.md").exists(), failures, f"{pack_dir.name}: missing pack operating guide")
-    skills_dir = pack_dir / "skills"
+def validate_skill_library(skill_dir: Path, failures: list[str]) -> None:
+    fail_if(not (skill_dir / "README.md").exists(), failures, f"{skill_dir.name}: missing README.md")
+    manifest_path = skill_dir / "manifest.json"
+    fail_if(not manifest_path.exists(), failures, f"{skill_dir.name}: missing manifest.json")
+    fail_if(not (skill_dir / "references" / "skill-operating-guide.md").exists(), failures, f"{skill_dir.name}: missing skill operating guide")
+    skills_dir = skill_dir / "skills"
     skill_dirs = sorted(path for path in skills_dir.glob("*") if path.is_dir()) if skills_dir.exists() else []
-    fail_if(len(skill_dirs) < 5, failures, f"{pack_dir.name}: expected at least 5 skill folders, found {len(skill_dirs)}")
+    fail_if(len(skill_dirs) < 5, failures, f"{skill_dir.name}: expected at least 5 skill folders, found {len(skill_dirs)}")
     if manifest_path.exists():
         try:
             manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
         except Exception as exc:
-            failures.append(f"{pack_dir.name}: manifest JSON does not parse: {exc}")
+            failures.append(f"{skill_dir.name}: manifest JSON does not parse: {exc}")
             manifest = {}
         manifest_skills = manifest.get("skills", []) if isinstance(manifest, dict) else []
-        fail_if(len(manifest_skills) != len(skill_dirs), failures, f"{pack_dir.name}: manifest skill count does not match folders")
+        fail_if(len(manifest_skills) != len(skill_dirs), failures, f"{skill_dir.name}: manifest skill count does not match folders")
     for skill_dir in skill_dirs:
         validate_skill(skill_dir, failures)
 
 
 def validate_sources(failures: list[str]) -> None:
-    source_files = sorted(SOURCE.glob("*.md"))
-    fail_if(len(source_files) < 10, failures, f"expected at least 10 source markdown packs, found {len(source_files)}")
+    source_files = sorted(SOURCE_SKILLS.glob("*.md"))
+    fail_if(len(source_files) < 10, failures, f"expected at least 10 source markdown workflow skills, found {len(source_files)}")
     for path in source_files:
         text = path.read_text(encoding="utf-8")
         fail_if(text.count("#### Skill:") < 5, failures, f"{path.name}: expected at least 5 source sub-skills")
-        for term in REQUIRED_SOURCE_TERMS:
+        for term in REQUIRED_SOURCE_SKILLS_TERMS:
             fail_if(term.lower() not in text.lower(), failures, f"{path.name}: missing source term {term}")
         for bad in BAD_POSITIONING:
             fail_if(bad in text.lower(), failures, f"{path.name}: weak positioning contains {bad}")
 
 
-def validate_zips(pack_dirs: list[Path], failures: list[str]) -> None:
+def validate_zips(skill_dirs: list[Path], failures: list[str]) -> None:
     zip_files = sorted(DIST.glob("*.zip"))
-    fail_if(len(zip_files) != len(pack_dirs), failures, f"expected {len(pack_dirs)} zip files, found {len(zip_files)}")
-    for pack_dir in pack_dirs:
-        zip_path = DIST / f"{pack_dir.name}.zip"
-        fail_if(not zip_path.exists(), failures, f"{pack_dir.name}: missing zip artifact")
+    fail_if(len(zip_files) != len(skill_dirs), failures, f"expected {len(skill_dirs)} zip files, found {len(zip_files)}")
+    for skill_dir in skill_dirs:
+        zip_path = DIST / f"{skill_dir.name}.zip"
+        fail_if(not zip_path.exists(), failures, f"{skill_dir.name}: missing zip artifact")
         if not zip_path.exists():
             continue
         with zipfile.ZipFile(zip_path) as zf:
             names = set(zf.namelist())
-        fail_if(f"{pack_dir.name}/README.md" not in names, failures, f"{zip_path.name}: missing rooted README.md")
-        fail_if(not any(name.startswith(f"{pack_dir.name}/skills/") and name.endswith("/SKILL.md") for name in names), failures, f"{zip_path.name}: missing skill SKILL.md files")
+        fail_if(f"{skill_dir.name}/README.md" not in names, failures, f"{zip_path.name}: missing rooted README.md")
+        fail_if(not any(name.startswith(f"{skill_dir.name}/skills/") and name.endswith("/SKILL.md") for name in names), failures, f"{zip_path.name}: missing skill SKILL.md files")
 
 
 def validate_evals(failures: list[str]) -> None:
@@ -145,23 +145,23 @@ def validate_evals(failures: list[str]) -> None:
         return
     data = json.loads(EVALS.read_text(encoding="utf-8"))
     scenarios = data.get("scenarios", [])
-    expected_scenarios = len(list(SOURCE.glob("*.md"))) * len(REQUIRED_SCENARIO_TYPES)
+    expected_scenarios = len(list(SOURCE_SKILLS.glob("*.md"))) * len(REQUIRED_SCENARIO_TYPES)
     fail_if(len(scenarios) != expected_scenarios, failures, f"expected {expected_scenarios} eval scenarios, found {len(scenarios)}")
-    by_pack: dict[str, set[str]] = {}
+    by_skill: dict[str, set[str]] = {}
     for scenario in scenarios:
-        pack = scenario.get("pack")
+        skill = scenario.get("skill")
         scenario_type = scenario.get("scenario_type")
-        if pack and scenario_type:
-            by_pack.setdefault(pack, set()).add(scenario_type)
+        if skill and scenario_type:
+            by_skill.setdefault(skill, set()).add(scenario_type)
         expected = json.dumps(scenario.get("expected_behavior", []))
         fail_if("active_skills" not in expected, failures, f"{scenario.get('id')}: expected behaviors missing active_skills")
-    for pack, types in by_pack.items():
+    for skill, types in by_skill.items():
         missing = REQUIRED_SCENARIO_TYPES - types
-        fail_if(bool(missing), failures, f"{pack}: missing scenario types {sorted(missing)}")
+        fail_if(bool(missing), failures, f"{skill}: missing scenario types {sorted(missing)}")
 
 
 def validate_text_style(failures: list[str]) -> None:
-    text_files = list(PACKS.rglob("*.md")) + list(SOURCE.rglob("*.md")) + [ROOT / "README.md", ROOT / "evals" / "EVAL_PLAN.md"]
+    text_files = list(SKILLS.rglob("*.md")) + list(SOURCE_SKILLS.rglob("*.md")) + [ROOT / "README.md", ROOT / "evals" / "EVAL_PLAN.md"]
     em_dash_hits: list[str] = []
     semicolon_hits: list[str] = []
     for path in text_files:
@@ -179,13 +179,13 @@ def validate_text_style(failures: list[str]) -> None:
 def main() -> int:
     failures: list[str] = []
     validate_sources(failures)
-    pack_dirs = sorted(path for path in PACKS.iterdir() if path.is_dir()) if PACKS.exists() else []
-    expected_packs = len(list(SOURCE.glob("*.md")))
-    fail_if(len(pack_dirs) != expected_packs, failures, f"expected {expected_packs} pack folders, found {len(pack_dirs)}")
-    fail_if(bool(list(PACKS.glob("*.md"))), failures, "packs/ must contain folders, not markdown pack files")
-    for pack_dir in pack_dirs:
-        validate_pack(pack_dir, failures)
-    validate_zips(pack_dirs, failures)
+    skill_dirs = sorted(path for path in SKILLS.iterdir() if path.is_dir()) if SKILLS.exists() else []
+    expected_skills = len(list(SOURCE_SKILLS.glob("*.md")))
+    fail_if(len(skill_dirs) != expected_skills, failures, f"expected {expected_skills} skill folders, found {len(skill_dirs)}")
+    fail_if(bool(list(SKILLS.glob("*.md"))), failures, "SKILLS/ must contain folders, not markdown skill files")
+    for skill_dir in skill_dirs:
+        validate_skill_library(skill_dir, failures)
+    validate_zips(skill_dirs, failures)
     validate_evals(failures)
     validate_text_style(failures)
 
@@ -195,11 +195,11 @@ def main() -> int:
             print(f"- {failure}")
         return 1
     print("PASS")
-    print(f"pack_folders={len(pack_dirs)}")
-    print(f"skill_folders={sum(1 for pack in pack_dirs for _ in (pack / 'skills').glob('*'))}")
-    print(f"source_markdown_packs={len(list(SOURCE.glob('*.md')))}")
+    print(f"skill_library_folders={len(skill_dirs)}")
+    print(f"skill_folders={sum(1 for skill_library in skill_dirs for _ in (skill_library / 'skills').glob('*'))}")
+    print(f"source_markdown_workflow_skills={len(list(SOURCE_SKILLS.glob('*.md')))}")
     print(f"zip_artifacts={len(list(DIST.glob('*.zip')))}")
-    print("required_skill_files=SKILL.md,references/safety-rules.md,references/output-schema.md,references/pack-context.md")
+    print("required_skill_files=SKILL.md,references/safety-rules.md,references/output-schema.md,references/skill-context.md")
     scenario_count = len(json.loads(EVALS.read_text(encoding="utf-8")).get("scenarios", []))
     print(f"eval_scenarios={scenario_count}")
     return 0
