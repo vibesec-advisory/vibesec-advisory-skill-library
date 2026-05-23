@@ -1,6 +1,6 @@
 ---
 name: scoping-the-proof-of-concept
-description: Supports the Sales Engineer Proof of Concept Skill workflow. Use when the team needs to define what the POC includes, what it excludes, who participates, and how success will be measured.
+description: Use when the team needs to define what the POC includes, what it excludes, who participates, and how success will be measured. Supports the Sales Engineer Proof of Concept Skill workflow.
 ---
 
 # Scoping the proof of concept

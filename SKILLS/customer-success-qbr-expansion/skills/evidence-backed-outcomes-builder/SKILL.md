@@ -1,6 +1,6 @@
 ---
 name: evidence-backed-outcomes-builder
-description: Supports the Customer Success QBR and Expansion Skill workflow. Use when the team needs a QBR narrative grounded in approved evidence.
+description: Use when the team needs a QBR narrative grounded in approved evidence. Supports the Customer Success QBR and Expansion Skill workflow.
 ---
 
 # Evidence-backed outcomes builder

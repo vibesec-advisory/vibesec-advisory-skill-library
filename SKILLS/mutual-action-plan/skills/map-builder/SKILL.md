@@ -1,6 +1,6 @@
 ---
 name: map-builder
-description: Supports the Mutual Action Plan Skill workflow. Use when the team needs a clear mutual action plan from reviewed facts.
+description: Use when the team needs a clear mutual action plan from reviewed facts. Supports the Mutual Action Plan Skill workflow.
 ---
 
 # MAP builder

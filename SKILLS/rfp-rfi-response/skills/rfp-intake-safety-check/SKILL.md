@@ -1,6 +1,6 @@
 ---
 name: rfp-intake-safety-check
-description: Supports the RFP and RFI Response Skill workflow. Use when rFP or RFI material needs classification before drafting.
+description: Use when rFP or RFI material needs classification before drafting. Supports the RFP and RFI Response Skill workflow.
 ---
 
 # RFP intake safety check

@@ -137,10 +137,11 @@ def skill_markdown(skill_title: str, skill_slug: str, role: str, skill: dict[str
     inputs = as_str_list(skill.get("inputs"))
     produces = as_str_list(skill.get("produces"))
     guardrails = as_str_list(skill.get("guardrails"))
-    clean_use = use
+    clean_use = use.strip()
     if clean_use.lower().startswith("use when "):
-        clean_use = clean_use[9:]
-    description = f"Supports the {skill_title} workflow. Use when {clean_use[0].lower() + clean_use[1:] if clean_use else title.lower() + ' is needed.'}"
+        clean_use = clean_use[9:].strip()
+    clean_use = clean_use[0].lower() + clean_use[1:] if clean_use else title.lower() + " is needed."
+    description = f"Use when {clean_use} Supports the {skill_title} workflow."
     description = description[:1020]
     return f"""---
 name: {name}

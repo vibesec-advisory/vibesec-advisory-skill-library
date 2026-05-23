@@ -1,6 +1,6 @@
 ---
 name: security-question-classifier
-description: Supports the Security Questionnaire Triage Skill workflow. Use when questions need category, sensitivity, and approved source mapping.
+description: Use when questions need category, sensitivity, and approved source mapping. Supports the Security Questionnaire Triage Skill workflow.
 ---
 
 # Security question classifier

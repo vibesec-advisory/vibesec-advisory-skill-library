@@ -1,6 +1,6 @@
 ---
 name: discovery-prep-brief
-description: Supports the Account Executive Discovery Skill workflow. Use when an AE needs a safe pre-call brief from public and CRM-safe context.
+description: Use when an AE needs a safe pre-call brief from public and CRM-safe context. Supports the Account Executive Discovery Skill workflow.
 ---
 
 # Discovery prep brief

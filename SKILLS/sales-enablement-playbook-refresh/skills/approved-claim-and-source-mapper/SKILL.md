@@ -1,6 +1,6 @@
 ---
 name: approved-claim-and-source-mapper
-description: Supports the Sales Enablement Playbook Refresh Skill workflow. Use when product, methodology, competitor, customer, roadmap, or ROI claims need source support before playbook refresh.
+description: Use when product, methodology, competitor, customer, roadmap, or ROI claims need source support before playbook refresh. Supports the Sales Enablement Playbook Refresh Skill workflow.
 ---
 
 # Approved claim and source mapper

@@ -1,6 +1,6 @@
 ---
 name: playbook-inventory-and-freshness-audit
-description: Supports the Sales Enablement Playbook Refresh Skill workflow. Use when a playbook, sales play, or enablement asset needs a structured freshness and ownership review.
+description: Use when a playbook, sales play, or enablement asset needs a structured freshness and ownership review. Supports the Sales Enablement Playbook Refresh Skill workflow.
 ---
 
 # Playbook inventory and freshness audit

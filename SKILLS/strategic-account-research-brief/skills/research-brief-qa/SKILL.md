@@ -1,6 +1,6 @@
 ---
 name: research-brief-qa
-description: Supports the Strategic Account Research Brief Skill workflow. Use when the brief needs final review before a seller uses it.
+description: Use when the brief needs final review before a seller uses it. Supports the Strategic Account Research Brief Skill workflow.
 ---
 
 # Research brief QA

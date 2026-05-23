@@ -1,6 +1,6 @@
 ---
 name: response-rate-experiment-and-learning-loop
-description: Supports the Outbound BDR Response Learning Skill workflow. Use when the team wants to compare outbound variants, learn from response rates, and update the sequence without overclaiming causality.
+description: Use when the team wants to compare outbound variants, learn from response rates, and update the sequence without overclaiming causality. Supports the Outbound BDR Response Learning Skill workflow.
 ---
 
 # Response-rate experiment and learning loop

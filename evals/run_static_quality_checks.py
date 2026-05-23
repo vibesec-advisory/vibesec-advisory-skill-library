@@ -87,10 +87,38 @@ def validate_skill(skill_dir: Path, failures: list[str]) -> None:
     fail_if(name != skill_dir.name, failures, f"{skill_file}: name must match directory")
     fail_if(not re.fullmatch(r"[a-z0-9](?:[a-z0-9-]{0,62}[a-z0-9])?", name), failures, f"{skill_file}: invalid skill name {name}")
     fail_if(len(description) == 0 or len(description) > 1024, failures, f"{skill_file}: bad description length")
-    fail_if("Use when" not in description, failures, f"{skill_file}: description missing trigger language")
+    fail_if(not description.startswith("Use when"), failures, f"{skill_file}: description must start with Use when")
     for term in REQUIRED_SKILL_TERMS:
         fail_if(term.lower() not in text.lower(), failures, f"{skill_file}: missing {term}")
     fail_if("Use when use when" in text, failures, f"{skill_file}: duplicated trigger phrase")
+
+
+def validate_public_skill_file(skill_file: Path, failures: list[str]) -> None:
+    text = skill_file.read_text(encoding="utf-8")
+    meta = frontmatter(text)
+    name = meta.get("name", "")
+    description = meta.get("description", "")
+    expected_name = skill_file.parent.name
+    fail_if(name != expected_name, failures, f"{skill_file}: name must match directory")
+    fail_if(not re.fullmatch(r"[a-z0-9](?:[a-z0-9-]{0,62}[a-z0-9])?", name), failures, f"{skill_file}: invalid skill name {name}")
+    fail_if(len(description) == 0 or len(description) > 1024, failures, f"{skill_file}: bad description length")
+    fail_if(not description.startswith("Use when"), failures, f"{skill_file}: description must start with Use when")
+    lower = text.lower()
+    for term in ["when to use", "when not to use", "data boundaries", "approval", "verification"]:
+        fail_if(term not in lower, failures, f"{skill_file}: missing standalone public skill term {term}")
+    fail_if("ignore previous instructions" in lower and "untrusted" not in lower, failures, f"{skill_file}: prompt-injection text must be framed as untrusted input")
+
+
+def validate_standalone_public_skills(failures: list[str]) -> None:
+    root_skill = ROOT / "SKILL.md"
+    fail_if(not root_skill.exists(), failures, "missing root gateway SKILL.md")
+    if root_skill.exists():
+        validate_public_skill_file(root_skill, failures)
+    standalone_root = ROOT / "skills"
+    if not standalone_root.exists():
+        return
+    for skill_file in sorted(standalone_root.rglob("SKILL.md")):
+        validate_public_skill_file(skill_file, failures)
 
 
 def validate_skill_library(skill_dir: Path, failures: list[str]) -> None:
@@ -161,7 +189,13 @@ def validate_evals(failures: list[str]) -> None:
 
 
 def validate_text_style(failures: list[str]) -> None:
-    text_files = list(SKILLS.rglob("*.md")) + list(SOURCE_SKILLS.rglob("*.md")) + [ROOT / "README.md", ROOT / "evals" / "EVAL_PLAN.md"]
+    text_files = (
+        list(SKILLS.rglob("*.md"))
+        + list(SOURCE_SKILLS.rglob("*.md"))
+        + list((ROOT / "skills").rglob("*.md"))
+        + list((ROOT / "docs").rglob("*.md"))
+        + [ROOT / "README.md", ROOT / "AGENTS.md", ROOT / "SKILL.md", ROOT / "evals" / "EVAL_PLAN.md"]
+    )
     em_dash_hits: list[str] = []
     semicolon_hits: list[str] = []
     for path in text_files:
@@ -187,6 +221,7 @@ def main() -> int:
         validate_skill_library(skill_dir, failures)
     validate_zips(skill_dirs, failures)
     validate_evals(failures)
+    validate_standalone_public_skills(failures)
     validate_text_style(failures)
 
     if failures:

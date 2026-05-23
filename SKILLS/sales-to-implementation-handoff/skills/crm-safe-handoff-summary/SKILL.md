@@ -1,6 +1,6 @@
 ---
 name: crm-safe-handoff-summary
-description: Supports the Sales to Implementation Handoff Skill workflow. Use when implementation needs usable context without sensitive or unsupported content.
+description: Use when implementation needs usable context without sensitive or unsupported content. Supports the Sales to Implementation Handoff Skill workflow.
 ---
 
 # CRM-safe handoff summary

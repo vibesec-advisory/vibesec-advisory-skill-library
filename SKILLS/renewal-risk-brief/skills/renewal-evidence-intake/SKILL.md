@@ -1,6 +1,6 @@
 ---
 name: renewal-evidence-intake
-description: Supports the Renewal Risk Brief Skill workflow. Use when risk signals need to be collected and classified safely.
+description: Use when risk signals need to be collected and classified safely. Supports the Renewal Risk Brief Skill workflow.
 ---
 
 # Renewal evidence intake

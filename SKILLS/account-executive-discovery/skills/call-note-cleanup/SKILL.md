@@ -1,6 +1,6 @@
 ---
 name: call-note-cleanup
-description: Supports the Account Executive Discovery Skill workflow. Use when messy redacted notes need to become structured facts, assumptions, and open questions.
+description: Use when messy redacted notes need to become structured facts, assumptions, and open questions. Supports the Account Executive Discovery Skill workflow.
 ---
 
 # Call note cleanup

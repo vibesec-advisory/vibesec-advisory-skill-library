@@ -2,20 +2,24 @@
 
 [![CI](https://github.com/vibesec-advisory/vibesec-advisory-skill-library/actions/workflows/ci.yml/badge.svg)](https://github.com/vibesec-advisory/vibesec-advisory-skill-library/actions/workflows/ci.yml)
 
-Free AI workflow skill libraries for GTM teams.
+Free governed AI workflow skill libraries for AI adoption and GTM teams.
 
-These are not prompt dumps. They are role-based skill libraries for repeatable GTM workflows with clear inputs, review steps, approval gates, output schemas, and eval coverage.
+These are not prompt dumps. They are role-based skill libraries for repeatable AI workflows with clear inputs, review steps, approval gates, output schemas, and eval coverage.
 
 The public libraries are generic by design. They show what good AI workflow skills look like before they are adapted to a specific company, tool stack, data source, or connector model.
 
 ## What is included
 
 - 13 GTM AI workflow skill libraries
-- 67 Agent Skills with `SKILL.md` files
+- 67 generated GTM Agent Skills with `SKILL.md` files
+- A root gateway skill for routing across the library
+- A flagship AI workflow governance skill pack for safe adoption, guardrails, and workflow safety maps
+- Standalone methodology skills for kickoff clarity and measurement discipline
 - Shared safety, output schema, and skill context references
 - Source markdown for editing and regeneration
 - Zip artifacts for direct download
-- Static eval scenarios for every skill
+- Static eval scenarios for every generated GTM skill
+- Clean-session activation eval scenarios for curated public entrypoints
 - Build and quality-check scripts
 
 ## Skills
@@ -35,6 +39,37 @@ The public libraries are generic by design. They show what good AI workflow skil
 13. Outbound BDR Response Learning
 
 See [`SKILL_CATALOG.md`](SKILL_CATALOG.md) for the full catalog.
+
+## Recommended starting points
+
+Start with the smallest entrypoint that matches the job:
+
+- [`SKILL.md`](SKILL.md) routes broad requests across the library.
+- [`skills/ai-workflow-governance/`](skills/ai-workflow-governance/) turns scattered AI usage into governed workflows with data boundaries, approval gates, and safety maps.
+- [`skills/goal-metaprompt-builder/`](skills/goal-metaprompt-builder/) turns a Grill Me-style kickoff into a Goal-ready meta prompt.
+- [`skills/power-metrics/`](skills/power-metrics/) helps teams define what to measure before improving, buying, or evaluating something.
+- [`docs/curated-entrypoints.md`](docs/curated-entrypoints.md) lists the recommended month-one public set.
+
+## Install with skills.sh
+
+Telemetry-safe discovery command:
+
+```bash
+DISABLE_TELEMETRY=1 DO_NOT_TRACK=1 npx --yes skills add https://github.com/vibesec-advisory/vibesec-advisory-skill-library --list --full-depth
+```
+
+Use the GitHub URL form above. Do not use the old bare namespace style. The `--full-depth` flag matters because the repo has a root gateway skill plus nested installable skills.
+
+## Agent Skills format
+
+This repo follows the Agent Skills directory pattern:
+
+- each skill lives in a directory with a case-sensitive `SKILL.md`
+- `name` matches the parent directory
+- descriptions are trigger-focused and start with `Use when`
+- supporting material lives in `references/`, `templates/`, or `scripts/`
+
+See [`docs/security-audit.md`](docs/security-audit.md) for the current trust posture and known gaps.
 
 ## How to use a skill
 

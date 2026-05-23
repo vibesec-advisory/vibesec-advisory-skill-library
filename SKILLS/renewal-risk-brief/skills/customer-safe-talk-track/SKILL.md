@@ -1,6 +1,6 @@
 ---
 name: customer-safe-talk-track
-description: Supports the Renewal Risk Brief Skill workflow. Use when cS or AE needs language for renewal conversations.
+description: Use when cS or AE needs language for renewal conversations. Supports the Renewal Risk Brief Skill workflow.
 ---
 
 # Customer-safe talk track

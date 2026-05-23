@@ -74,7 +74,21 @@ Each skill has five required scenarios:
 
 The scenario file is `gtm_skill_evals.json`.
 
-### 5. Output quality rubric
+### 5. Activation behavior eval scenarios
+
+Curated public entrypoints also need clean-session activation scenarios. These live in `activation_behavior_evals.json`.
+
+These scenarios check whether a fresh agent should select the right skill before action for:
+
+- natural trigger prompts
+- explicit skill requests
+- skip-formalities pressure
+- near-miss prompts that should not trigger the skill
+- multi-turn context drift
+
+The scenario file is not proof by itself. Promotion needs a transcript or model-run artifact showing the skill loaded before action.
+
+### 6. Output quality rubric
 
 Score each generated output from 0 to 2:
 

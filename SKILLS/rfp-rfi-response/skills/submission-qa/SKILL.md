@@ -1,6 +1,6 @@
 ---
 name: submission-qa
-description: Supports the RFP and RFI Response Skill workflow. Use when the RFP response needs final checks before external use.
+description: Use when the RFP response needs final checks before external use. Supports the RFP and RFI Response Skill workflow.
 ---
 
 # Submission QA

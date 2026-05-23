@@ -1,6 +1,6 @@
 ---
 name: poc-intake-safety-check
-description: Supports the Sales Engineer Proof of Concept Skill workflow. Use when raw opportunity notes need to be screened before any AI-assisted planning starts.
+description: Use when raw opportunity notes need to be screened before any AI-assisted planning starts. Supports the Sales Engineer Proof of Concept Skill workflow.
 ---
 
 # POC intake safety check

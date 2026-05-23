@@ -1,6 +1,6 @@
 ---
 name: escalation-brief
-description: Supports the Renewal Risk Brief Skill workflow. Use when renewal risk needs leadership, legal, security, or product review.
+description: Use when renewal risk needs leadership, legal, security, or product review. Supports the Renewal Risk Brief Skill workflow.
 ---
 
 # Escalation brief

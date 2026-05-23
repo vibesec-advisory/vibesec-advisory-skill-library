@@ -1,6 +1,6 @@
 ---
 name: confirmed-commitment-extractor
-description: Supports the Sales to Implementation Handoff Skill workflow. Use when sales promises need separation from assumptions and unsupported notes.
+description: Use when sales promises need separation from assumptions and unsupported notes. Supports the Sales to Implementation Handoff Skill workflow.
 ---
 
 # Confirmed commitment extractor

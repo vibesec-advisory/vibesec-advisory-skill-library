@@ -1,6 +1,6 @@
 ---
 name: expansion-hypothesis-builder
-description: Supports the Customer Success QBR and Expansion Skill workflow. Use when cS or AE needs expansion ideas based on evidence, not wishful thinking.
+description: Use when cS or AE needs expansion ideas based on evidence, not wishful thinking. Supports the Customer Success QBR and Expansion Skill workflow.
 ---
 
 # Expansion hypothesis builder

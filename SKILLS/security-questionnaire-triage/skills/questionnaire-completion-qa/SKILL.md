@@ -1,6 +1,6 @@
 ---
 name: questionnaire-completion-qa
-description: Supports the Security Questionnaire Triage Skill workflow. Use when the response set needs final safety review.
+description: Use when the response set needs final safety review. Supports the Security Questionnaire Triage Skill workflow.
 ---
 
 # Questionnaire completion QA

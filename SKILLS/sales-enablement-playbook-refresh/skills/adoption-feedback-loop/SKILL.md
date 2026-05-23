@@ -1,6 +1,6 @@
 ---
 name: adoption-feedback-loop
-description: Supports the Sales Enablement Playbook Refresh Skill workflow. Use when enablement needs to track playbook adoption, field feedback, manager usage, and unresolved objections after rollout.
+description: Use when enablement needs to track playbook adoption, field feedback, manager usage, and unresolved objections after rollout. Supports the Sales Enablement Playbook Refresh Skill workflow.
 ---
 
 # Adoption feedback loop

@@ -1,6 +1,6 @@
 ---
 name: outbound-input-safety-check
-description: Supports the Outbound BDR Response Learning Skill workflow. Use when target-account lists, contact notes, sequence drafts, or reply snippets need to be screened before any AI-assisted outbound work starts.
+description: Use when target-account lists, contact notes, sequence drafts, or reply snippets need to be screened before any AI-assisted outbound work starts. Supports the Outbound BDR Response Learning Skill workflow.
 ---
 
 # Outbound input safety check

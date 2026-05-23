@@ -1,6 +1,6 @@
 ---
 name: poc-pitch-narrative-and-deck-outline
-description: Supports the Sales Engineer Proof of Concept Skill workflow. Use when the SE or AE needs to explain the POC internally or to the buyer in a clear, on-brand story.
+description: Use when the SE or AE needs to explain the POC internally or to the buyer in a clear, on-brand story. Supports the Sales Engineer Proof of Concept Skill workflow.
 ---
 
 # POC pitch narrative and deck outline

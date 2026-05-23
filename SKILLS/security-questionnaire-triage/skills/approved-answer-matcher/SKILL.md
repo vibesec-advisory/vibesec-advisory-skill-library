@@ -1,6 +1,6 @@
 ---
 name: approved-answer-matcher
-description: Supports the Security Questionnaire Triage Skill workflow. Use when a question can be answered from vetted language.
+description: Use when a question can be answered from vetted language. Supports the Security Questionnaire Triage Skill workflow.
 ---
 
 # Approved answer matcher

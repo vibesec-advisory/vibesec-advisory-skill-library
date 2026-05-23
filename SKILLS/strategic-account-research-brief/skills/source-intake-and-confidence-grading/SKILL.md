@@ -1,6 +1,6 @@
 ---
 name: source-intake-and-confidence-grading
-description: Supports the Strategic Account Research Brief Skill workflow. Use when account research sources need to be classified before synthesis.
+description: Use when account research sources need to be classified before synthesis. Supports the Strategic Account Research Brief Skill workflow.
 ---
 
 # Source intake and confidence grading

@@ -1,6 +1,6 @@
 ---
 name: post-send-evidence-summary
-description: Supports the Marketing Ops Campaign QA Skill workflow. Use when delivery, engagement, A/B test, or pipeline results need a safe post-send summary.
+description: Use when delivery, engagement, A/B test, or pipeline results need a safe post-send summary. Supports the Marketing Ops Campaign QA Skill workflow.
 ---
 
 # Post-send evidence summary

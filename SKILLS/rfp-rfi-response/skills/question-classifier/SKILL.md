@@ -1,6 +1,6 @@
 ---
 name: question-classifier
-description: Supports the RFP and RFI Response Skill workflow. Use when questions need category, sensitivity, and routing before answers are drafted.
+description: Use when questions need category, sensitivity, and routing before answers are drafted. Supports the RFP and RFI Response Skill workflow.
 ---
 
 # Question classifier

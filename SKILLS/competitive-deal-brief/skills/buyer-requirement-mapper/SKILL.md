@@ -1,6 +1,6 @@
 ---
 name: buyer-requirement-mapper
-description: Supports the Competitive Deal Brief Skill workflow. Use when competitive context needs to be reframed around buyer needs.
+description: Use when competitive context needs to be reframed around buyer needs. Supports the Competitive Deal Brief Skill workflow.
 ---
 
 # Buyer requirement mapper

@@ -1,6 +1,6 @@
 ---
 name: questionnaire-intake-safety-check
-description: Supports the Security Questionnaire Triage Skill workflow. Use when security questionnaire material needs data and NDA screening.
+description: Use when security questionnaire material needs data and NDA screening. Supports the Security Questionnaire Triage Skill workflow.
 ---
 
 # Questionnaire intake safety check

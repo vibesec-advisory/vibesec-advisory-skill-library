@@ -1,6 +1,6 @@
 ---
 name: save-plan-options-builder
-description: Supports the Renewal Risk Brief Skill workflow. Use when the team needs options without creating unauthorized commitments.
+description: Use when the team needs options without creating unauthorized commitments. Supports the Renewal Risk Brief Skill workflow.
 ---
 
 # Save plan options builder

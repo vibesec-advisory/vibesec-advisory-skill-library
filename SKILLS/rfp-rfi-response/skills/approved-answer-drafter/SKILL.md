@@ -1,6 +1,6 @@
 ---
 name: approved-answer-drafter
-description: Supports the RFP and RFI Response Skill workflow. Use when a response is supported by approved source material.
+description: Use when a response is supported by approved source material. Supports the RFP and RFI Response Skill workflow.
 ---
 
 # Approved answer drafter

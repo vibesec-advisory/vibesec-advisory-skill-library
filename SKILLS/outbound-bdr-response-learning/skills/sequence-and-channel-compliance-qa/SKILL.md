@@ -1,6 +1,6 @@
 ---
 name: sequence-and-channel-compliance-qa
-description: Supports the Outbound BDR Response Learning Skill workflow. Use when an outbound sequence needs review for channel fit, consent, opt-out, suppression, send cadence, and logging before launch.
+description: Use when an outbound sequence needs review for channel fit, consent, opt-out, suppression, send cadence, and logging before launch. Supports the Outbound BDR Response Learning Skill workflow.
 ---
 
 # Sequence and channel compliance QA

@@ -1,6 +1,6 @@
 ---
 name: reply-triage-and-safe-follow-up-builder
-description: Supports the Outbound BDR Response Learning Skill workflow. Use when inbound replies from outbound need classification, safe follow-up guidance, or manager escalation without exposing private notes.
+description: Use when inbound replies from outbound need classification, safe follow-up guidance, or manager escalation without exposing private notes. Supports the Outbound BDR Response Learning Skill workflow.
 ---
 
 # Reply triage and safe follow-up builder

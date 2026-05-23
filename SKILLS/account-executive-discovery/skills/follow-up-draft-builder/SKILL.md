@@ -1,6 +1,6 @@
 ---
 name: follow-up-draft-builder
-description: Supports the Account Executive Discovery Skill workflow. Use when the AE needs a cautious buyer-facing follow-up from reviewed notes.
+description: Use when the AE needs a cautious buyer-facing follow-up from reviewed notes. Supports the Account Executive Discovery Skill workflow.
 ---
 
 # Follow-up draft builder

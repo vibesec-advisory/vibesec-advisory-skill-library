@@ -1,6 +1,6 @@
 ---
 name: competitive-mention-intake
-description: Supports the Competitive Deal Brief Skill workflow. Use when a rep reports competitor context that needs safe handling.
+description: Use when a rep reports competitor context that needs safe handling. Supports the Competitive Deal Brief Skill workflow.
 ---
 
 # Competitive mention intake

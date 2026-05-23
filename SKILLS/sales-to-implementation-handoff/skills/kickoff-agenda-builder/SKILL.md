@@ -1,6 +1,6 @@
 ---
 name: kickoff-agenda-builder
-description: Supports the Sales to Implementation Handoff Skill workflow. Use when the team needs a safe first implementation agenda.
+description: Use when the team needs a safe first implementation agenda. Supports the Sales to Implementation Handoff Skill workflow.
 ---
 
 # Kickoff agenda builder

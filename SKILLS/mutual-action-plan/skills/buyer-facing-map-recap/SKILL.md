@@ -1,6 +1,6 @@
 ---
 name: buyer-facing-map-recap
-description: Supports the Mutual Action Plan Skill workflow. Use when the team needs a safe summary to share after internal review.
+description: Use when the team needs a safe summary to share after internal review. Supports the Mutual Action Plan Skill workflow.
 ---
 
 # Buyer-facing MAP recap

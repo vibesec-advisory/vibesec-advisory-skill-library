@@ -1,6 +1,6 @@
 ---
 name: icp-and-trigger-fit-gate
-description: Supports the Outbound BDR Response Learning Skill workflow. Use when a BDR or manager needs to decide whether an account, segment, or trigger is appropriate for outbound before writing or sending.
+description: Use when a BDR or manager needs to decide whether an account, segment, or trigger is appropriate for outbound before writing or sending. Supports the Outbound BDR Response Learning Skill workflow.
 ---
 
 # ICP and trigger-fit gate

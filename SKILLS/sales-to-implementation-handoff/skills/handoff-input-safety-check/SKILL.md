@@ -1,6 +1,6 @@
 ---
 name: handoff-input-safety-check
-description: Supports the Sales to Implementation Handoff Skill workflow. Use when closed-won context needs screening before implementation planning.
+description: Use when closed-won context needs screening before implementation planning. Supports the Sales to Implementation Handoff Skill workflow.
 ---
 
 # Handoff input safety check

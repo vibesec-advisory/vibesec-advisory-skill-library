@@ -1,6 +1,6 @@
 ---
 name: risk-level-classifier
-description: Supports the Renewal Risk Brief Skill workflow. Use when the team needs a reviewed renewal risk level.
+description: Use when the team needs a reviewed renewal risk level. Supports the Renewal Risk Brief Skill workflow.
 ---
 
 # Risk level classifier

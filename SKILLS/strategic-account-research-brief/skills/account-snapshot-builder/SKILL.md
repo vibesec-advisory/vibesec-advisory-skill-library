@@ -1,6 +1,6 @@
 ---
 name: account-snapshot-builder
-description: Supports the Strategic Account Research Brief Skill workflow. Use when the team needs a concise internal view of the account.
+description: Use when the team needs a concise internal view of the account. Supports the Strategic Account Research Brief Skill workflow.
 ---
 
 # Account snapshot builder

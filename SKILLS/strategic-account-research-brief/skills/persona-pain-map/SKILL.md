@@ -1,6 +1,6 @@
 ---
 name: persona-pain-map
-description: Supports the Strategic Account Research Brief Skill workflow. Use when research needs to connect to likely GTM roles and workflows.
+description: Use when research needs to connect to likely GTM roles and workflows. Supports the Strategic Account Research Brief Skill workflow.
 ---
 
 # Persona pain map

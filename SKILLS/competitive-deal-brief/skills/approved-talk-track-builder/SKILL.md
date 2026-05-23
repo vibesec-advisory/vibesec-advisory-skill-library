@@ -1,6 +1,6 @@
 ---
 name: approved-talk-track-builder
-description: Supports the Competitive Deal Brief Skill workflow. Use when the seller needs external-safe language.
+description: Use when the seller needs external-safe language. Supports the Competitive Deal Brief Skill workflow.
 ---
 
 # Approved talk track builder

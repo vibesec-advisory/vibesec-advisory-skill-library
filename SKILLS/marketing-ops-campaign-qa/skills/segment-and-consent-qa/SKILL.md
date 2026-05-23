@@ -1,6 +1,6 @@
 ---
 name: segment-and-consent-qa
-description: Supports the Marketing Ops Campaign QA Skill workflow. Use when audience logic, suppression rules, consent status, or send eligibility needs review before campaign launch.
+description: Use when audience logic, suppression rules, consent status, or send eligibility needs review before campaign launch. Supports the Marketing Ops Campaign QA Skill workflow.
 ---
 
 # Segment and consent QA

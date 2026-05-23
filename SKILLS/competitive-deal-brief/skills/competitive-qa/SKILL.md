@@ -1,6 +1,6 @@
 ---
 name: competitive-qa
-description: Supports the Competitive Deal Brief Skill workflow. Use when a competitive brief needs risk review before seller use.
+description: Use when a competitive brief needs risk review before seller use. Supports the Competitive Deal Brief Skill workflow.
 ---
 
 # Competitive QA

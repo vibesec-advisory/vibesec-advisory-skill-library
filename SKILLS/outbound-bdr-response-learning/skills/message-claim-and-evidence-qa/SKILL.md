@@ -1,6 +1,6 @@
 ---
 name: message-claim-and-evidence-qa
-description: Supports the Outbound BDR Response Learning Skill workflow. Use when outbound email, LinkedIn, call, or voicemail copy needs review for unsupported claims, unsafe personalization, or overpromising.
+description: Use when outbound email, LinkedIn, call, or voicemail copy needs review for unsupported claims, unsafe personalization, or overpromising. Supports the Outbound BDR Response Learning Skill workflow.
 ---
 
 # Message claim and evidence QA

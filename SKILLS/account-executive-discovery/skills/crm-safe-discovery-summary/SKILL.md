@@ -1,6 +1,6 @@
 ---
 name: crm-safe-discovery-summary
-description: Supports the Account Executive Discovery Skill workflow. Use when the team needs a record that is useful without exposing sensitive details.
+description: Use when the team needs a record that is useful without exposing sensitive details. Supports the Account Executive Discovery Skill workflow.
 ---
 
 # CRM-safe discovery summary

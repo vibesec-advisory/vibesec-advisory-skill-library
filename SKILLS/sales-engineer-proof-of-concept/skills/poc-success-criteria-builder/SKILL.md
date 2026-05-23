@@ -1,6 +1,6 @@
 ---
 name: poc-success-criteria-builder
-description: Supports the Sales Engineer Proof of Concept Skill workflow. Use when vague goals need to become measurable pass, partial pass, fail, or blocked criteria.
+description: Use when vague goals need to become measurable pass, partial pass, fail, or blocked criteria. Supports the Sales Engineer Proof of Concept Skill workflow.
 ---
 
 # POC success criteria builder

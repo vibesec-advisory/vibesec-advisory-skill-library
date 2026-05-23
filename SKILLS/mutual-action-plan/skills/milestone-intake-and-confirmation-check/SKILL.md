@@ -1,6 +1,6 @@
 ---
 name: milestone-intake-and-confirmation-check
-description: Supports the Mutual Action Plan Skill workflow. Use when buyer and seller milestones need to be sorted by confirmation status.
+description: Use when buyer and seller milestones need to be sorted by confirmation status. Supports the Mutual Action Plan Skill workflow.
 ---
 
 # Milestone intake and confirmation check

@@ -1,6 +1,6 @@
 ---
 name: sme-review-packet
-description: Supports the RFP and RFI Response Skill workflow. Use when blocked or low-confidence questions need specialist review.
+description: Use when blocked or low-confidence questions need specialist review. Supports the RFP and RFI Response Skill workflow.
 ---
 
 # SME review packet

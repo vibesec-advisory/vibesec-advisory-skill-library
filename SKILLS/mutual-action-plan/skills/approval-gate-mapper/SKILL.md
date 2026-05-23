@@ -1,6 +1,6 @@
 ---
 name: approval-gate-mapper
-description: Supports the Mutual Action Plan Skill workflow. Use when milestones may require legal, security, procurement, implementation, or executive review.
+description: Use when milestones may require legal, security, procurement, implementation, or executive review. Supports the Mutual Action Plan Skill workflow.
 ---
 
 # Approval gate mapper

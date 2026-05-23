@@ -1,6 +1,6 @@
 ---
 name: role-play-scenario-builder
-description: Supports the Sales Enablement Playbook Refresh Skill workflow. Use when approved playbook guidance needs seller practice scenarios, objection prompts, or discovery drills.
+description: Use when approved playbook guidance needs seller practice scenarios, objection prompts, or discovery drills. Supports the Sales Enablement Playbook Refresh Skill workflow.
 ---
 
 # Role-play scenario builder

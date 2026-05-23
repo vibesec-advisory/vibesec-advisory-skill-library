@@ -1,6 +1,6 @@
 ---
 name: poc-closeout-and-crm-safe-recap
-description: Supports the Sales Engineer Proof of Concept Skill workflow. Use when the team needs to summarize POC results, next steps, and decision status after execution.
+description: Use when the team needs to summarize POC results, next steps, and decision status after execution. Supports the Sales Engineer Proof of Concept Skill workflow.
 ---
 
 # POC closeout and CRM-safe recap

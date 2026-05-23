@@ -1,6 +1,6 @@
 ---
 name: launch-approval-packet-builder
-description: Supports the Marketing Ops Campaign QA Skill workflow. Use when a manager needs a concise approval packet before scheduling or deploying a campaign.
+description: Use when a manager needs a concise approval packet before scheduling or deploying a campaign. Supports the Marketing Ops Campaign QA Skill workflow.
 ---
 
 # Launch approval packet builder

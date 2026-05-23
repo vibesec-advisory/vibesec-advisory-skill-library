@@ -1,6 +1,6 @@
 ---
 name: safe-outreach-angle-builder
-description: Supports the Strategic Account Research Brief Skill workflow. Use when the team needs outreach ideas grounded in approved account context.
+description: Use when the team needs outreach ideas grounded in approved account context. Supports the Strategic Account Research Brief Skill workflow.
 ---
 
 # Safe outreach angle builder

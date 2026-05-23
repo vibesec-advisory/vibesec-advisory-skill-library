@@ -1,6 +1,6 @@
 ---
 name: campaign-intake-safety-check
-description: Supports the Marketing Ops Campaign QA Skill workflow. Use when raw campaign briefs, segment notes, or launch tickets need to be screened before any AI-assisted QA starts.
+description: Use when raw campaign briefs, segment notes, or launch tickets need to be screened before any AI-assisted QA starts. Supports the Marketing Ops Campaign QA Skill workflow.
 ---
 
 # Campaign intake safety check

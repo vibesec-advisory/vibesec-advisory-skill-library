@@ -1,6 +1,6 @@
 ---
 name: technical-risk-and-dependency-register
-description: Supports the Sales Engineer Proof of Concept Skill workflow. Use when technical details, integrations, data requirements, or blockers could affect feasibility or customer expectations.
+description: Use when technical details, integrations, data requirements, or blockers could affect feasibility or customer expectations. Supports the Sales Engineer Proof of Concept Skill workflow.
 ---
 
 # Technical risk and dependency register

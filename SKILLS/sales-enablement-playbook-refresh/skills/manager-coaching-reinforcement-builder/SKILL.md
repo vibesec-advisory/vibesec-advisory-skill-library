@@ -1,6 +1,6 @@
 ---
 name: manager-coaching-reinforcement-builder
-description: Supports the Sales Enablement Playbook Refresh Skill workflow. Use when playbook updates need frontline manager coaching prompts, observation checklists, and reinforcement routines.
+description: Use when playbook updates need frontline manager coaching prompts, observation checklists, and reinforcement routines. Supports the Sales Enablement Playbook Refresh Skill workflow.
 ---
 
 # Manager coaching reinforcement builder

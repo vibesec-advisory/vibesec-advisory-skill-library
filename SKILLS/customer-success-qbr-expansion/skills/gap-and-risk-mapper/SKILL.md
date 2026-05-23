@@ -1,6 +1,6 @@
 ---
 name: gap-and-risk-mapper
-description: Supports the Customer Success QBR and Expansion Skill workflow. Use when customer risks need to be visible internally before executive sharing.
+description: Use when customer risks need to be visible internally before executive sharing. Supports the Customer Success QBR and Expansion Skill workflow.
 ---
 
 # Gap and risk mapper

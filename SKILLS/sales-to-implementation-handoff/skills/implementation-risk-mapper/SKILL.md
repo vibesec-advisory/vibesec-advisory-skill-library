@@ -1,6 +1,6 @@
 ---
 name: implementation-risk-mapper
-description: Supports the Sales to Implementation Handoff Skill workflow. Use when handoff details could create delivery, security, or expectation risk.
+description: Use when handoff details could create delivery, security, or expectation risk. Supports the Sales to Implementation Handoff Skill workflow.
 ---
 
 # Implementation risk mapper

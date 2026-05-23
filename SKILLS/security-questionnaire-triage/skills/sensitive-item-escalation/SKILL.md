@@ -1,6 +1,6 @@
 ---
 name: sensitive-item-escalation
-description: Supports the Security Questionnaire Triage Skill workflow. Use when questions request confidential security, legal, or customer-specific detail.
+description: Use when questions request confidential security, legal, or customer-specific detail. Supports the Security Questionnaire Triage Skill workflow.
 ---
 
 # Sensitive item escalation

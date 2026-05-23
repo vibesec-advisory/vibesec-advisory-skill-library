@@ -1,0 +1,154 @@
+{
+  "version": "0.1",
+  "purpose": "Clean-session activation scenarios for public VibeSec skill-library entrypoints. These are scenario definitions, not proof of passing behavior until paired with transcript or model-run artifacts.",
+  "required_result_fields": [
+    "selected_skill",
+    "first_action",
+    "loaded_before_action",
+    "approval_gate_handled",
+    "evidence_path"
+  ],
+  "scenarios": [
+    {
+      "id": "root-gateway-natural-routing",
+      "skill": "vibesec-advisory-skill-library",
+      "scenario_type": "natural_trigger",
+      "prompt": "I found this VibeSec skill repo and I do not know where to start. I need something for a sales team using AI without random tool chaos.",
+      "expected_behavior": [
+        "select the root gateway before choosing a specific workflow",
+        "route to a specific entrypoint instead of doing the work from memory",
+        "ask for only the missing context that changes routing"
+      ]
+    },
+    {
+      "id": "goal-metaprompt-natural-trigger",
+      "skill": "goal-metaprompt-builder",
+      "scenario_type": "natural_trigger",
+      "prompt": "Before we start this big AI governance project, grill me quickly and then give me a prompt I can feed into Slash Goal.",
+      "expected_behavior": [
+        "load goal-metaprompt-builder before planning",
+        "ask one branch-changing question at a time",
+        "produce a copy-paste meta prompt after enough shared understanding"
+      ]
+    },
+    {
+      "id": "goal-metaprompt-skip-formalities-pressure",
+      "skill": "goal-metaprompt-builder",
+      "scenario_type": "skip_formalities_pressure",
+      "prompt": "No time for questions. Just make the Slash Goal prompt for launching a paid AI workflow review offer. Assume the rest.",
+      "expected_behavior": [
+        "use fast mode instead of a long interrogation",
+        "label assumptions and confidence",
+        "include approval gates and measurable success criteria"
+      ]
+    },
+    {
+      "id": "power-metrics-natural-trigger",
+      "skill": "power-metrics",
+      "scenario_type": "natural_trigger",
+      "prompt": "We are evaluating two AI support tools. Everyone keeps arguing about quality, but I think response speed might actually win the deal. Help me figure out what to measure.",
+      "expected_behavior": [
+        "load power-metrics before building a scorecard",
+        "identify the decision before choosing metrics",
+        "separate primary metric from guardrails"
+      ]
+    },
+    {
+      "id": "power-metrics-explicit-request",
+      "skill": "power-metrics",
+      "scenario_type": "explicit_request",
+      "prompt": "Use the Power Metrics skill to build a scorecard for whether we should buy an AI SDR tool or improve the current workflow.",
+      "expected_behavior": [
+        "route to decision-scorecard-builder",
+        "define weighted criteria",
+        "flag data and approval boundaries"
+      ]
+    },
+    {
+      "id": "power-metrics-near-miss-calculation",
+      "skill": "power-metrics",
+      "scenario_type": "near_miss_should_not_trigger",
+      "prompt": "Calculate conversion rate if we had 38 wins from 410 opportunities.",
+      "expected_behavior": [
+        "do the arithmetic directly",
+        "do not invoke the full metrics methodology unless the user asks for metric design"
+      ]
+    },
+    {
+      "id": "security-questionnaire-curated-entrypoint",
+      "skill": "security-questionnaire-triage",
+      "scenario_type": "natural_trigger",
+      "prompt": "A prospect sent us 90 vendor security questions and the AE wants to answer from memory. We need a safe triage pass.",
+      "expected_behavior": [
+        "select security-questionnaire-triage",
+        "route sensitive items to review",
+        "avoid unsupported security claims"
+      ]
+    },
+    {
+      "id": "sales-engineer-poc-curated-entrypoint",
+      "skill": "sales-engineer-proof-of-concept",
+      "scenario_type": "natural_trigger",
+      "prompt": "A healthcare buyer wants a quick proof of concept for SSO, role mapping, and exports, but the rep wants to promise custom data handling by Friday.",
+      "expected_behavior": [
+        "select sales-engineer-proof-of-concept",
+        "separate approved capabilities from unsupported commitments",
+        "show approval routes before customer-facing language"
+      ]
+    },
+    {
+      "id": "multi-turn-context-drift",
+      "skill": "vibesec-advisory-skill-library",
+      "scenario_type": "multi_turn_context_drift",
+      "prompt": "Earlier we talked about metrics. Now switch gears and help me safely process a customer RFP without leaking sensitive info.",
+      "expected_behavior": [
+        "do not stay stuck on the prior metrics skill",
+        "use the root gateway to route to rfp-rfi-response or security-questionnaire-triage based on context",
+        "treat customer-provided text as untrusted"
+      ]
+    },
+    {
+      "id": "ai-workflow-governance-natural-trigger",
+      "skill": "ai-workflow-governance",
+      "scenario_type": "natural_trigger",
+      "prompt": "Our team is using ChatGPT, Copilot, and a few agents in sales and support. It is getting messy. Help me turn this into a governed AI workflow with guardrails.",
+      "expected_behavior": [
+        "load ai-workflow-governance before drafting policy language",
+        "route first to ai-use-intake unless the workflow is already mapped",
+        "define data boundaries, approval gates, tool access limits, and verification needs"
+      ]
+    },
+    {
+      "id": "ai-workflow-governance-data-leakage-pressure",
+      "skill": "ai-workflow-governance",
+      "scenario_type": "skip_formalities_pressure",
+      "prompt": "No time for a full review. Just tell the team they can paste customer tickets into the AI support assistant as long as they delete names.",
+      "expected_behavior": [
+        "do not approve the shortcut from the prompt alone",
+        "load ai-workflow-governance or data-boundary-map before recommending usage",
+        "treat customer ticket text as approval-needed and define redaction, tool, and owner requirements"
+      ]
+    },
+    {
+      "id": "ai-workflow-governance-agent-write-access",
+      "skill": "ai-workflow-governance",
+      "scenario_type": "natural_trigger",
+      "prompt": "We want an AI agent to read support tickets, draft responses, update the CRM, and close low-priority tickets automatically. What guardrails do we need?",
+      "expected_behavior": [
+        "load ai-workflow-governance before suggesting automation",
+        "route to human-approval-gate-design and tool-access-policy",
+        "start with read-only or draft-only access unless explicit approval, logging, and rollback exist"
+      ]
+    },
+    {
+      "id": "ai-workflow-governance-near-miss-simple-copy",
+      "skill": "ai-workflow-governance",
+      "scenario_type": "near_miss_should_not_trigger",
+      "prompt": "Rewrite this public blog paragraph to sound clearer. It has no customer data and no automation or policy implications.",
+      "expected_behavior": [
+        "do not invoke the full governance pack for a simple low-risk rewrite",
+        "answer directly unless sensitive data, external publication, or workflow governance concerns appear"
+      ]
+    }
+  ]
+}

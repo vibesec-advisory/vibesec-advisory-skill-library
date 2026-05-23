@@ -1,6 +1,6 @@
 ---
 name: internal-deal-coaching-brief
-description: Supports the Competitive Deal Brief Skill workflow. Use when the manager needs internal guidance without leaking it externally.
+description: Use when the manager needs internal guidance without leaking it externally. Supports the Competitive Deal Brief Skill workflow.
 ---
 
 # Internal deal coaching brief

@@ -1,6 +1,6 @@
 ---
 name: discovery-question-builder
-description: Supports the Account Executive Discovery Skill workflow. Use when the rep needs better questions tied to the buyer workflow.
+description: Use when the rep needs better questions tied to the buyer workflow. Supports the Account Executive Discovery Skill workflow.
 ---
 
 # Discovery question builder

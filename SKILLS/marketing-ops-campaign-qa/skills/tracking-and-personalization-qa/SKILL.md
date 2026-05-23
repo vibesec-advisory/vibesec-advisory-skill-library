@@ -1,6 +1,6 @@
 ---
 name: tracking-and-personalization-qa
-description: Supports the Marketing Ops Campaign QA Skill workflow. Use when uTMs, attribution assumptions, personalization tokens, links, test sends, or A/B test setup need review.
+description: Use when uTMs, attribution assumptions, personalization tokens, links, test sends, or A/B test setup need review. Supports the Marketing Ops Campaign QA Skill workflow.
 ---
 
 # Tracking and personalization QA

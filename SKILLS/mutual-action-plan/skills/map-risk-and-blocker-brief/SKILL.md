@@ -1,6 +1,6 @@
 ---
 name: map-risk-and-blocker-brief
-description: Supports the Mutual Action Plan Skill workflow. Use when the plan needs risks visible before sharing.
+description: Use when the plan needs risks visible before sharing. Supports the Mutual Action Plan Skill workflow.
 ---
 
 # MAP risk and blocker brief

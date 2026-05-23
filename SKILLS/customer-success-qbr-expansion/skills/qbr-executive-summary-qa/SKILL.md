@@ -1,6 +1,6 @@
 ---
 name: qbr-executive-summary-qa
-description: Supports the Customer Success QBR and Expansion Skill workflow. Use when the final QBR needs safe customer-facing language.
+description: Use when the final QBR needs safe customer-facing language. Supports the Customer Success QBR and Expansion Skill workflow.
 ---
 
 # QBR executive summary QA

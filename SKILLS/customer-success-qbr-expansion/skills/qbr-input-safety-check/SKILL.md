@@ -1,6 +1,6 @@
 ---
 name: qbr-input-safety-check
-description: Supports the Customer Success QBR and Expansion Skill workflow. Use when customer health and adoption material needs screening before AI use.
+description: Use when customer health and adoption material needs screening before AI use. Supports the Customer Success QBR and Expansion Skill workflow.
 ---
 
 # QBR input safety check
