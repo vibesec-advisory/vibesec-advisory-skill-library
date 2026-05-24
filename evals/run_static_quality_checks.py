@@ -87,10 +87,20 @@ def validate_skill(skill_dir: Path, failures: list[str]) -> None:
     fail_if(name != skill_dir.name, failures, f"{skill_file}: name must match directory")
     fail_if(not re.fullmatch(r"[a-z0-9](?:[a-z0-9-]{0,62}[a-z0-9])?", name), failures, f"{skill_file}: invalid skill name {name}")
     fail_if(len(description) == 0 or len(description) > 1024, failures, f"{skill_file}: bad description length")
-    fail_if("Use when" not in description, failures, f"{skill_file}: description missing trigger language")
+    fail_if(not description.startswith("Use when"), failures, f"{skill_file}: description must start with Use when")
     for term in REQUIRED_SKILL_TERMS:
         fail_if(term.lower() not in text.lower(), failures, f"{skill_file}: missing {term}")
     fail_if("Use when use when" in text, failures, f"{skill_file}: duplicated trigger phrase")
+    fail_if("supports the" in description.lower(), failures, f"{skill_file}: description must stay trigger-only and avoid workflow summaries")
+    lower = text.lower()
+    for term in [
+        "when not to use",
+        "data boundaries",
+        "failure modes and red flags",
+        "worked example",
+        "customer assurance",
+    ]:
+        fail_if(term not in lower, failures, f"{skill_file}: missing Superpowers-style quality term {term}")
 
 
 def validate_skill_library(skill_dir: Path, failures: list[str]) -> None:
