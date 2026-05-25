@@ -78,7 +78,7 @@ A Skill contains a small library of reusable skills, not one mega-prompt. Use th
 
 #### Skill: QBR input safety check
 
-Use when customer health and adoption material needs screening before AI use.
+Use when customer health, adoption, usage, support, or expansion material needs data screening before AI-assisted QBR or renewal work.
 
 Input contract:
 - customer notes
@@ -102,7 +102,7 @@ Skill-specific guardrails:
 
 #### Skill: Evidence-backed outcomes builder
 
-Use when the team needs a QBR narrative grounded in approved evidence.
+Use when QBR narrative work depends on approved evidence, sourced outcomes, and visible confidence instead of vague customer-success claims.
 
 Input contract:
 - customer goals
@@ -126,7 +126,7 @@ Skill-specific guardrails:
 
 #### Skill: Gap and risk mapper
 
-Use when customer risks need to be visible internally before executive sharing.
+Use when customer adoption gaps, risks, blockers, or unresolved commitments need to be made visible internally before executive or customer sharing.
 
 Input contract:
 - support themes
@@ -146,7 +146,7 @@ Skill-specific guardrails:
 
 #### Skill: Expansion hypothesis builder
 
-Use when CS or AE needs expansion ideas based on evidence, not wishful thinking.
+Use when CS or AE needs expansion ideas based on reviewed evidence, fit, and customer value without wishful thinking or pressure tactics.
 
 Input contract:
 - approved outcomes
@@ -166,7 +166,7 @@ Skill-specific guardrails:
 
 #### Skill: QBR executive summary QA
 
-Use when the final QBR needs safe customer-facing language.
+Use when a QBR summary, expansion narrative, or executive-facing recap is ready for final review against customer-safe language and unsupported claims.
 
 Input contract:
 - draft QBR

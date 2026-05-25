@@ -80,7 +80,7 @@ A Skill contains a small library of reusable skills, not one mega-prompt. Use th
 
 #### Skill: Playbook inventory and freshness audit
 
-Use when a playbook, sales play, or enablement asset needs a structured freshness and ownership review.
+Use when a playbook, sales play, talk track, or enablement asset needs structured freshness, ownership, source, and risk review.
 
 Input contract:
 - redacted playbook content or section list
@@ -103,7 +103,7 @@ Skill-specific guardrails:
 
 #### Skill: Approved claim and source mapper
 
-Use when product, methodology, competitor, customer, roadmap, or ROI claims need source support before playbook refresh.
+Use when product, methodology, competitor, customer, roadmap, ROI, or compliance claims need source support before playbook refresh.
 
 Input contract:
 - claim list from playbook
@@ -126,7 +126,7 @@ Skill-specific guardrails:
 
 #### Skill: Role-play scenario builder
 
-Use when approved playbook guidance needs seller practice scenarios, objection prompts, or discovery drills.
+Use when approved playbook guidance needs seller practice scenarios, objection prompts, discovery drills, or manager-reviewed coaching exercises.
 
 Input contract:
 - approved playbook section
@@ -149,7 +149,7 @@ Skill-specific guardrails:
 
 #### Skill: Manager coaching reinforcement builder
 
-Use when playbook updates need frontline manager coaching prompts, observation checklists, and reinforcement routines.
+Use when playbook updates need frontline manager coaching prompts, observation checklists, reinforcement routines, and field-adoption support.
 
 Input contract:
 - approved playbook changes
@@ -172,7 +172,7 @@ Skill-specific guardrails:
 
 #### Skill: Adoption feedback loop
 
-Use when enablement needs to track playbook adoption, field feedback, manager usage, and unresolved objections after rollout.
+Use when enablement needs to track playbook adoption, field feedback, manager usage, unresolved objections, and future refresh inputs after rollout.
 
 Input contract:
 - aggregate content usage metrics

@@ -77,7 +77,7 @@ A Skill contains a small library of reusable skills, not one mega-prompt. Use th
 
 #### Skill: Competitive mention intake
 
-Use when a rep reports competitor context that needs safe handling.
+Use when a seller reports competitor context, buyer claims, or market comparison notes that need safe intake before analysis or external response.
 
 Input contract:
 - redacted deal notes
@@ -102,7 +102,7 @@ Skill-specific guardrails:
 
 #### Skill: Buyer requirement mapper
 
-Use when competitive context needs to be reframed around buyer needs.
+Use when competitive deal notes need to be reframed around buyer requirements, decision criteria, risk, and source confidence instead of vendor dunking.
 
 Input contract:
 - buyer requirements
@@ -121,7 +121,7 @@ Skill-specific guardrails:
 
 #### Skill: Approved talk track builder
 
-Use when the seller needs external-safe language.
+Use when a seller needs external-safe competitive language grounded in approved claims, buyer needs, and reviewable evidence.
 
 Input contract:
 - approved source language
@@ -140,7 +140,7 @@ Skill-specific guardrails:
 
 #### Skill: Internal deal coaching brief
 
-Use when the manager needs internal guidance without leaking it externally.
+Use when internal competitive deal guidance must stay separated from buyer-facing copy, CRM-safe summaries, and unsupported seller speculation.
 
 Input contract:
 - deal context
@@ -160,7 +160,7 @@ Skill-specific guardrails:
 
 #### Skill: Competitive QA
 
-Use when a competitive brief needs risk review before seller use.
+Use when a competitive brief, talk track, or deal coaching note is ready for final review against unsupported claims, legal risk, tone, and external-use boundaries.
 
 Input contract:
 - draft brief

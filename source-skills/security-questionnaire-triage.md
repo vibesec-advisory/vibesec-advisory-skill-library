@@ -76,7 +76,7 @@ A Skill contains a small library of reusable skills, not one mega-prompt. Use th
 
 #### Skill: Questionnaire intake safety check
 
-Use when security questionnaire material needs data and NDA screening.
+Use when security questionnaire material, customer attachments, NDA context, or control details need data and confidentiality screening before drafting.
 
 Input contract:
 - questionnaire text
@@ -96,7 +96,7 @@ Skill-specific guardrails:
 
 #### Skill: Security question classifier
 
-Use when questions need category, sensitivity, and approved source mapping.
+Use when security questionnaire questions need category, sensitivity, source mapping, ownership, and review routing before answers are matched.
 
 Input contract:
 - question list
@@ -116,7 +116,7 @@ Skill-specific guardrails:
 
 #### Skill: Approved answer matcher
 
-Use when a question can be answered from vetted language.
+Use when a security questionnaire question can be answered from vetted language while preserving caveats, confidence, and approval status.
 
 Input contract:
 - question
@@ -137,7 +137,7 @@ Skill-specific guardrails:
 
 #### Skill: Sensitive item escalation
 
-Use when questions request confidential security, legal, or customer-specific detail.
+Use when security questionnaire questions request confidential architecture, legal, customer-specific, pentest, roadmap, or control detail.
 
 Input contract:
 - sensitive question
@@ -157,7 +157,7 @@ Skill-specific guardrails:
 
 #### Skill: Questionnaire completion QA
 
-Use when the response set needs final safety review.
+Use when a security questionnaire response set is ready for final review against sensitive details, unsupported claims, source gaps, and approval readiness.
 
 Input contract:
 - draft answers

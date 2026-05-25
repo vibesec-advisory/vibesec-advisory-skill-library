@@ -137,16 +137,29 @@ def validate_sources(failures: list[str]) -> None:
 
 def validate_zips(skill_dirs: list[Path], failures: list[str]) -> None:
     zip_files = sorted(DIST.glob("*.zip"))
-    fail_if(len(zip_files) != len(skill_dirs), failures, f"expected {len(skill_dirs)} zip files, found {len(zip_files)}")
+    fail_if(len(zip_files) != len(skill_dirs), failures, f"expected {len(skill_dirs)} library zip files, found {len(zip_files)}")
     for skill_dir in skill_dirs:
         zip_path = DIST / f"{skill_dir.name}.zip"
-        fail_if(not zip_path.exists(), failures, f"{skill_dir.name}: missing zip artifact")
-        if not zip_path.exists():
-            continue
-        with zipfile.ZipFile(zip_path) as zf:
-            names = set(zf.namelist())
-        fail_if(f"{skill_dir.name}/README.md" not in names, failures, f"{zip_path.name}: missing rooted README.md")
-        fail_if(not any(name.startswith(f"{skill_dir.name}/skills/") and name.endswith("/SKILL.md") for name in names), failures, f"{zip_path.name}: missing skill SKILL.md files")
+        fail_if(not zip_path.exists(), failures, f"{skill_dir.name}: missing library zip artifact")
+        if zip_path.exists():
+            with zipfile.ZipFile(zip_path) as zf:
+                names = set(zf.namelist())
+            fail_if(f"{skill_dir.name}/README.md" not in names, failures, f"{zip_path.name}: missing rooted README.md")
+            fail_if(not any(name.startswith(f"{skill_dir.name}/skills/") and name.endswith("/SKILL.md") for name in names), failures, f"{zip_path.name}: missing skill SKILL.md files")
+
+        skill_folders = sorted(path for path in (skill_dir / "skills").iterdir() if path.is_dir())
+        individual_zip_dir = DIST / skill_dir.name
+        individual_zips = sorted(individual_zip_dir.glob("*.zip")) if individual_zip_dir.exists() else []
+        fail_if(len(individual_zips) != len(skill_folders), failures, f"{skill_dir.name}: expected {len(skill_folders)} individual skill zip files, found {len(individual_zips)}")
+        for child in skill_folders:
+            child_zip = individual_zip_dir / f"{child.name}.zip"
+            fail_if(not child_zip.exists(), failures, f"{skill_dir.name}/{child.name}: missing individual skill zip artifact")
+            if not child_zip.exists():
+                continue
+            with zipfile.ZipFile(child_zip) as zf:
+                names = set(zf.namelist())
+            fail_if(f"{child.name}/SKILL.md" not in names, failures, f"{child_zip}: missing rooted SKILL.md")
+            fail_if(not any(name.startswith(f"{child.name}/references/") for name in names), failures, f"{child_zip}: missing rooted references")
 
 
 def validate_evals(failures: list[str]) -> None:
@@ -209,6 +222,7 @@ def main() -> int:
     print(f"skill_folders={sum(1 for skill_library in skill_dirs for _ in (skill_library / 'skills').glob('*'))}")
     print(f"source_markdown_workflow_skills={len(list(SOURCE_SKILLS.glob('*.md')))}")
     print(f"zip_artifacts={len(list(DIST.glob('*.zip')))}")
+    print(f"individual_zip_artifacts={len(list(DIST.glob('*/*.zip')))}")
     print("required_skill_files=SKILL.md,references/safety-rules.md,references/output-schema.md,references/skill-context.md")
     scenario_count = len(json.loads(EVALS.read_text(encoding="utf-8")).get("scenarios", []))
     print(f"eval_scenarios={scenario_count}")

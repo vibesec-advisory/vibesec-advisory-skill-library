@@ -76,7 +76,7 @@ A Skill contains a small library of reusable skills, not one mega-prompt. Use th
 
 #### Skill: RFP intake safety check
 
-Use when RFP or RFI material needs classification before drafting.
+Use when RFP, RFI, questionnaire, attachment, or buyer-provided material needs classification before drafting or source matching.
 
 Input contract:
 - questionnaire text
@@ -96,7 +96,7 @@ Skill-specific guardrails:
 
 #### Skill: Question classifier
 
-Use when questions need category, sensitivity, and routing before answers are drafted.
+Use when RFP or RFI questions need category, sensitivity, ownership, confidence, and routing before answers are drafted.
 
 Input contract:
 - RFP questions
@@ -116,7 +116,7 @@ Skill-specific guardrails:
 
 #### Skill: Approved answer drafter
 
-Use when a response is supported by approved source material.
+Use when an RFP or RFI response can be drafted from approved source material while preserving caveats and review status.
 
 Input contract:
 - question
@@ -137,7 +137,7 @@ Skill-specific guardrails:
 
 #### Skill: SME review packet
 
-Use when blocked or low-confidence questions need specialist review.
+Use when blocked, sensitive, low-confidence, legal, security, privacy, or product-specific RFP questions need specialist review.
 
 Input contract:
 - question list
@@ -157,7 +157,7 @@ Skill-specific guardrails:
 
 #### Skill: Submission QA
 
-Use when the RFP response needs final checks before external use.
+Use when an RFP or RFI response set is ready for final review against unsupported claims, missing approvals, sensitive details, and external-use readiness.
 
 Input contract:
 - draft responses

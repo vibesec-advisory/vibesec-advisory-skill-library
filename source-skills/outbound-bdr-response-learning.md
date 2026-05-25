@@ -81,7 +81,7 @@ A Skill contains a small library of reusable skills, not one mega-prompt. Use th
 
 #### Skill: Outbound input safety check
 
-Use when target-account lists, contact notes, sequence drafts, or reply snippets need to be screened before any AI-assisted outbound work starts.
+Use when target lists, account notes, contact snippets, sequence drafts, or reply excerpts need screening before AI-assisted outbound work starts.
 
 Input contract:
 - redacted target segment or account list summary
@@ -104,7 +104,7 @@ Skill-specific guardrails:
 
 #### Skill: ICP and trigger-fit gate
 
-Use when a BDR or manager needs to decide whether an account, segment, or trigger is appropriate for outbound before writing or sending.
+Use when outbound account, segment, contact, or trigger fit must be assessed before a BDR writes, sends, sequences, or escalates outreach.
 
 Input contract:
 - ICP definition and disqualifiers
@@ -127,7 +127,7 @@ Skill-specific guardrails:
 
 #### Skill: Message claim and evidence QA
 
-Use when outbound email, LinkedIn, call, or voicemail copy needs review for unsupported claims, unsafe personalization, or overpromising.
+Use when outbound email, LinkedIn, call, or voicemail copy is ready for review against unsupported claims, unsafe personalization, sensitive data, or overpromising.
 
 Input contract:
 - draft outbound message or sequence step
@@ -150,7 +150,7 @@ Skill-specific guardrails:
 
 #### Skill: Sequence and channel compliance QA
 
-Use when an outbound sequence needs review for channel fit, consent, opt-out, suppression, send cadence, and logging before launch.
+Use when an outbound sequence must be checked for channel fit, consent, opt-out, suppression, send cadence, localization, and logging before launch.
 
 Input contract:
 - channel plan and sequence steps
@@ -173,7 +173,7 @@ Skill-specific guardrails:
 
 #### Skill: Reply triage and safe follow-up builder
 
-Use when inbound replies from outbound need classification, safe follow-up guidance, or manager escalation without exposing private notes.
+Use when inbound replies to outbound need classification, safe follow-up guidance, and escalation without exposing private notes or inventing buyer intent.
 
 Input contract:
 - redacted reply theme or sanitized excerpt
@@ -196,7 +196,7 @@ Skill-specific guardrails:
 
 #### Skill: Response-rate experiment and learning loop
 
-Use when the team wants to compare outbound variants, learn from response rates, and update the sequence without overclaiming causality.
+Use when a team wants to compare outbound variants, learn from response rates, and update sequence guidance without overclaiming causality.
 
 Input contract:
 - experiment hypothesis

@@ -79,7 +79,7 @@ A Skill contains a small library of reusable skills, not one mega-prompt. Use th
 
 #### Skill: Handoff input safety check
 
-Use when closed-won context needs screening before implementation planning.
+Use when closed-won context, sales notes, commitments, customer data, or implementation assumptions need screening before handoff planning.
 
 Input contract:
 - redacted opportunity notes
@@ -99,7 +99,7 @@ Skill-specific guardrails:
 
 #### Skill: Confirmed commitment extractor
 
-Use when sales promises need separation from assumptions and unsupported notes.
+Use when sales promises, buyer expectations, assumptions, and unsupported notes need separation before implementation begins.
 
 Input contract:
 - approved contract scope
@@ -118,7 +118,7 @@ Skill-specific guardrails:
 
 #### Skill: Implementation risk mapper
 
-Use when handoff details could create delivery, security, or expectation risk.
+Use when handoff details could create delivery, security, integration, data, timeline, or expectation risk for implementation.
 
 Input contract:
 - confirmed scope
@@ -138,7 +138,7 @@ Skill-specific guardrails:
 
 #### Skill: Kickoff agenda builder
 
-Use when the team needs a safe first implementation agenda.
+Use when a first implementation kickoff agenda must be grounded in confirmed commitments, known risks, open questions, and approval gates.
 
 Input contract:
 - confirmed commitments
@@ -158,7 +158,7 @@ Skill-specific guardrails:
 
 #### Skill: CRM-safe handoff summary
 
-Use when implementation needs usable context without sensitive or unsupported content.
+Use when implementation needs usable CRM or project context without sensitive details, unsupported commitments, or internal sales strategy.
 
 Input contract:
 - reviewed handoff
