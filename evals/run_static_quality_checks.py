@@ -21,6 +21,9 @@ REQUIRED_SKILL_FILES = [
 ]
 
 REQUIRED_SKILL_TERMS = [
+    "Mandatory first move",
+    "Tool use notes",
+    "Customer assurance",
     "input_safety_status",
     "approval_status",
     "crm_safe_summary",
