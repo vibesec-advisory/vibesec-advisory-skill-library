@@ -77,7 +77,7 @@ A Skill contains a small library of reusable skills, not one mega-prompt. Use th
 
 #### Skill: Renewal evidence intake
 
-Use when risk signals need to be collected and classified safely.
+Use when renewal risk signals from usage, support, CRM, stakeholder notes, or commercial context need safe intake and confidence grading.
 
 Input contract:
 - redacted account notes
@@ -97,7 +97,7 @@ Skill-specific guardrails:
 
 #### Skill: Risk level classifier
 
-Use when the team needs a reviewed renewal risk level.
+Use when renewal risk must be classified from evidence, caveats, and escalation triggers instead of gut-feel scoring or anecdotal sentiment.
 
 Input contract:
 - evidence table
@@ -118,7 +118,7 @@ Skill-specific guardrails:
 
 #### Skill: Save plan options builder
 
-Use when the team needs options without creating unauthorized commitments.
+Use when renewal save-plan options must stay evidence-based, reviewable, and free of unauthorized discounts, credits, roadmap promises, or custom work.
 
 Input contract:
 - risk rationale
@@ -138,7 +138,7 @@ Skill-specific guardrails:
 
 #### Skill: Customer-safe talk track
 
-Use when CS or AE needs language for renewal conversations.
+Use when CS or AE needs renewal conversation language that is accurate, calm, and separated from internal risk notes.
 
 Input contract:
 - approved facts
@@ -157,7 +157,7 @@ Skill-specific guardrails:
 
 #### Skill: Escalation brief
 
-Use when renewal risk needs leadership, legal, security, or product review.
+Use when renewal risk needs leadership, legal, security, product, finance, or implementation review with facts separated from assumptions.
 
 Input contract:
 - risk brief

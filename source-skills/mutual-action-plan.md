@@ -77,7 +77,7 @@ A Skill contains a small library of reusable skills, not one mega-prompt. Use th
 
 #### Skill: Milestone intake and confirmation check
 
-Use when buyer and seller milestones need to be sorted by confirmation status.
+Use when buyer and seller milestones, dates, owners, or dependencies need to be sorted by confirmation status before building a mutual action plan.
 
 Input contract:
 - redacted notes
@@ -97,7 +97,7 @@ Skill-specific guardrails:
 
 #### Skill: MAP builder
 
-Use when the team needs a clear mutual action plan from reviewed facts.
+Use when reviewed milestones and dependencies need to become a clear mutual action plan with owners, dates, assumptions, and approval gates.
 
 Input contract:
 - confirmed milestones
@@ -117,7 +117,7 @@ Skill-specific guardrails:
 
 #### Skill: Approval gate mapper
 
-Use when milestones may require legal, security, procurement, implementation, or executive review.
+Use when MAP milestones may require legal, security, procurement, implementation, finance, or executive review before customer sharing.
 
 Input contract:
 - milestones
@@ -136,7 +136,7 @@ Skill-specific guardrails:
 
 #### Skill: MAP risk and blocker brief
 
-Use when the plan needs risks visible before sharing.
+Use when a mutual action plan needs internal risk, blocker, dependency, or slippage visibility before buyer-facing recap.
 
 Input contract:
 - draft MAP
@@ -155,7 +155,7 @@ Skill-specific guardrails:
 
 #### Skill: Buyer-facing MAP recap
 
-Use when the team needs a safe summary to share after internal review.
+Use when a buyer-facing mutual action plan recap must be prepared after internal review of milestones, risks, commitments, and approval gates.
 
 Input contract:
 - approved MAP

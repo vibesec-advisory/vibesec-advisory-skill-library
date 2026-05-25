@@ -76,7 +76,7 @@ A Skill contains a small library of reusable skills, not one mega-prompt. Use th
 
 #### Skill: Source intake and confidence grading
 
-Use when account research sources need to be classified before synthesis.
+Use when public, internal-approved, NDA-only, or user-provided account research must be classified for source type, freshness, confidence, and do-not-use risk before synthesis.
 
 Input contract:
 - source URLs or notes
@@ -95,7 +95,7 @@ Skill-specific guardrails:
 
 #### Skill: Account snapshot builder
 
-Use when the team needs a concise internal view of the account.
+Use when a seller needs a concise internal account view built from approved public facts and redacted internal context without exposing private notes or unsupported intent claims.
 
 Input contract:
 - approved public facts
@@ -114,7 +114,7 @@ Skill-specific guardrails:
 
 #### Skill: Persona pain map
 
-Use when research needs to connect to likely GTM roles and workflows.
+Use when sourced account facts need to be translated into role-specific workflow hypotheses, validation questions, and safe persona context for GTM planning.
 
 Input contract:
 - approved account facts
@@ -133,7 +133,7 @@ Skill-specific guardrails:
 
 #### Skill: Safe outreach angle builder
 
-Use when the team needs outreach ideas grounded in approved account context.
+Use when outreach ideas, first lines, or account-specific angles need to be grounded in approved evidence without creepy personalization, competitor leakage, or unsupported claims.
 
 Input contract:
 - sourced facts
@@ -152,7 +152,7 @@ Skill-specific guardrails:
 
 #### Skill: Research brief QA
 
-Use when the brief needs final review before a seller uses it.
+Use when an account research brief needs final source, confidence, CRM-safe, and external-use review before a seller or executive sponsor uses it.
 
 Input contract:
 - draft brief

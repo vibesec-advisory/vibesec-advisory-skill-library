@@ -77,7 +77,7 @@ A Skill contains a small library of reusable skills, not one mega-prompt. Use th
 
 #### Skill: Discovery prep brief
 
-Use when an AE needs a safe pre-call brief from public and CRM-safe context.
+Use when an AE needs a pre-call discovery brief from public, CRM-safe, and approved context before a buyer conversation.
 
 Input contract:
 - public account facts
@@ -98,7 +98,7 @@ Skill-specific guardrails:
 
 #### Skill: Discovery question builder
 
-Use when the rep needs better questions tied to the buyer workflow.
+Use when preparing buyer-specific discovery questions from workflow context, persona assumptions, risks, and approved account evidence before a live call.
 
 Input contract:
 - buyer role
@@ -119,7 +119,7 @@ Skill-specific guardrails:
 
 #### Skill: Call note cleanup
 
-Use when messy redacted notes need to become structured facts, assumptions, and open questions.
+Use when redacted discovery notes, transcripts, or meeting fragments need to become structured facts, assumptions, open questions, and internal-only notes.
 
 Input contract:
 - redacted notes
@@ -140,7 +140,7 @@ Skill-specific guardrails:
 
 #### Skill: Follow-up draft builder
 
-Use when the AE needs a cautious buyer-facing follow-up from reviewed notes.
+Use when an AE needs a cautious buyer-facing follow-up from reviewed discovery notes without adding unsupported commitments or sensitive internal context.
 
 Input contract:
 - approved facts
@@ -160,7 +160,7 @@ Skill-specific guardrails:
 
 #### Skill: CRM-safe discovery summary
 
-Use when the team needs a record that is useful without exposing sensitive details.
+Use when discovery findings need to be saved into CRM as useful context while excluding sensitive details, unsupported claims, and negotiation strategy.
 
 Input contract:
 - reviewed note summary

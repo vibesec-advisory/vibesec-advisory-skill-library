@@ -80,7 +80,7 @@ A Skill contains a small library of reusable skills, not one mega-prompt. Use th
 
 #### Skill: Campaign intake safety check
 
-Use when raw campaign briefs, segment notes, or launch tickets need to be screened before any AI-assisted QA starts.
+Use when raw campaign briefs, segment notes, lists, launch tickets, or personalization ideas need screening before AI-assisted campaign QA starts.
 
 Input contract:
 - redacted campaign brief
@@ -102,7 +102,7 @@ Skill-specific guardrails:
 
 #### Skill: Segment and consent QA
 
-Use when audience logic, suppression rules, consent status, or send eligibility needs review before campaign launch.
+Use when audience logic, suppression rules, consent status, send eligibility, or list-source evidence must be checked before campaign launch.
 
 Input contract:
 - segment criteria and source system
@@ -125,7 +125,7 @@ Skill-specific guardrails:
 
 #### Skill: Tracking and personalization QA
 
-Use when UTMs, attribution assumptions, personalization tokens, links, test sends, or A/B test setup need review.
+Use when UTMs, attribution assumptions, personalization tokens, links, test sends, or A/B test setup must be checked before scheduling.
 
 Input contract:
 - tracking parameter plan
@@ -148,7 +148,7 @@ Skill-specific guardrails:
 
 #### Skill: Launch approval packet builder
 
-Use when a manager needs a concise approval packet before scheduling or deploying a campaign.
+Use when campaign launch readiness must be summarized across consent, segment logic, tracking, personalization, risk, blockers, and signoff owners.
 
 Input contract:
 - safe input bundle
@@ -171,7 +171,7 @@ Skill-specific guardrails:
 
 #### Skill: Post-send evidence summary
 
-Use when delivery, engagement, A/B test, or pipeline results need a safe post-send summary.
+Use when delivery, engagement, A/B test, attribution, or pipeline results need a safe post-send summary without overclaiming causality.
 
 Input contract:
 - aggregated delivery metrics

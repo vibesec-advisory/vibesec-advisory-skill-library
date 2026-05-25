@@ -85,7 +85,7 @@ A Skill contains a small library of reusable skills, not one mega-prompt. Use th
 
 #### Skill: POC intake safety check
 
-Use when raw opportunity notes need to be screened before any AI-assisted planning starts.
+Use when raw opportunity notes, buyer goals, data needs, integration asks, or demo requests need screening before AI-assisted POC planning starts.
 
 Input contract:
 - redacted opportunity notes
@@ -110,7 +110,7 @@ Skill-specific guardrails:
 
 #### Skill: Scoping the proof of concept
 
-Use when the team needs to define what the POC includes, what it excludes, who participates, and how success will be measured.
+Use when POC scope, exclusions, participants, data boundaries, environments, and success criteria must be defined before work starts.
 
 Input contract:
 - buyer problem statement
@@ -134,7 +134,7 @@ Skill-specific guardrails:
 
 #### Skill: POC success criteria builder
 
-Use when vague goals need to become measurable pass, partial pass, fail, or blocked criteria.
+Use when vague POC goals need to become measurable pass, partial-pass, fail, or blocked criteria with owners and evidence requirements.
 
 Input contract:
 - scoped POC objective
@@ -157,7 +157,7 @@ Skill-specific guardrails:
 
 #### Skill: POC pitch narrative and deck outline
 
-Use when the SE or AE needs to explain the POC internally or to the buyer in a clear, on-brand story.
+Use when an SE or AE needs to explain the POC internally or to the buyer using a clear, accurate, on-brand story.
 
 Input contract:
 - approved POC scope
@@ -181,7 +181,7 @@ Skill-specific guardrails:
 
 #### Skill: Technical risk and dependency register
 
-Use when technical details, integrations, data requirements, or blockers could affect feasibility or customer expectations.
+Use when technical details, integrations, data requirements, environments, or blockers could affect POC feasibility or customer expectations.
 
 Input contract:
 - technical requirements
@@ -205,7 +205,7 @@ Skill-specific guardrails:
 
 #### Skill: POC closeout and CRM-safe recap
 
-Use when the team needs to summarize POC results, next steps, and decision status after execution.
+Use when POC outcomes, decision status, next steps, blockers, and CRM-safe notes must be summarized after execution.
 
 Input contract:
 - final criteria status
