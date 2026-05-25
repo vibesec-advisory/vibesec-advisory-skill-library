@@ -1,6 +1,6 @@
 ---
 name: crm-safe-handoff-summary
-description: Use when implementation needs usable CRM or project context without sensitive details, unsupported commitments, or internal sales strategy.
+description: Use when reviewed sales-to-implementation handoff context needs to be saved into CRM or project systems while excluding sensitive details, unsupported commitments, and internal sales strategy.
 ---
 
 # CRM-safe handoff summary
@@ -23,7 +23,7 @@ You are an implementation handoff operator and risk reviewer. You preserve usefu
 
 ## When to use
 
-Use when implementation needs usable CRM or project context without sensitive details, unsupported commitments, or internal sales strategy.
+Use when reviewed sales-to-implementation handoff context needs to be saved into CRM or project systems while excluding sensitive details, unsupported commitments, and internal sales strategy.
 
 ## When not to use
 
