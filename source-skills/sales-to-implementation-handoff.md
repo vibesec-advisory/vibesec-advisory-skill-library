@@ -158,7 +158,7 @@ Skill-specific guardrails:
 
 #### Skill: CRM-safe handoff summary
 
-Use when implementation needs usable CRM or project context without sensitive details, unsupported commitments, or internal sales strategy.
+Use when reviewed sales-to-implementation handoff context needs to be saved into CRM or project systems while excluding sensitive details, unsupported commitments, and internal sales strategy.
 
 Input contract:
 - reviewed handoff
