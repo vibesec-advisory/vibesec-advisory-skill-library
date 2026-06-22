@@ -1,0 +1,46 @@
+{
+  "title": "Agent Tool Authority Review Skill",
+  "slug": "agent-tool-authority-review",
+  "owner": "AI Operations, Security, and Platform Owners",
+  "version": "0.1",
+  "status": "draft-ready-for-review",
+  "format": "vibesec-gtm-skill-skill-folder-v1",
+  "skill_format": "Agent Skills directory with case-sensitive SKILL.md",
+  "skills": [
+    {
+      "name": "agent-context-quarantine-mapper",
+      "title": "Agent context quarantine mapper",
+      "path": "skills/agent-context-quarantine-mapper/SKILL.md"
+    },
+    {
+      "name": "agent-permission-card-writer",
+      "title": "Agent permission card writer",
+      "path": "skills/agent-permission-card-writer/SKILL.md"
+    },
+    {
+      "name": "agent-service-identity-assigner",
+      "title": "Agent service identity assigner",
+      "path": "skills/agent-service-identity-assigner/SKILL.md"
+    },
+    {
+      "name": "agent-capability-diff-reviewer",
+      "title": "Agent capability diff reviewer",
+      "path": "skills/agent-capability-diff-reviewer/SKILL.md"
+    },
+    {
+      "name": "tool-result-influence-boundary-mapper",
+      "title": "Tool result influence boundary mapper",
+      "path": "skills/tool-result-influence-boundary-mapper/SKILL.md"
+    },
+    {
+      "name": "browser-agent-profile-isolator",
+      "title": "Browser agent profile isolator",
+      "path": "skills/browser-agent-profile-isolator/SKILL.md"
+    },
+    {
+      "name": "github-agent-input-reviewer",
+      "title": "GitHub agent input reviewer",
+      "path": "skills/github-agent-input-reviewer/SKILL.md"
+    }
+  ]
+}

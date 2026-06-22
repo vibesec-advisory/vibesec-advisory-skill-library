@@ -1,0 +1,46 @@
+{
+  "title": "Agent Workflow Control Review Skill",
+  "slug": "agent-workflow-control-review",
+  "owner": "AI Operations, Security, and Workflow Owners",
+  "version": "0.1",
+  "status": "draft-ready-for-review",
+  "format": "vibesec-gtm-skill-skill-folder-v1",
+  "skill_format": "Agent Skills directory with case-sensitive SKILL.md",
+  "skills": [
+    {
+      "name": "skill-input-contract-writer",
+      "title": "Skill input contract writer",
+      "path": "skills/skill-input-contract-writer/SKILL.md"
+    },
+    {
+      "name": "agent-source-labeler",
+      "title": "Agent source labeler",
+      "path": "skills/agent-source-labeler/SKILL.md"
+    },
+    {
+      "name": "agent-acceptance-criteria-setter",
+      "title": "Agent acceptance criteria setter",
+      "path": "skills/agent-acceptance-criteria-setter/SKILL.md"
+    },
+    {
+      "name": "agent-action-preview-builder",
+      "title": "Agent action preview builder",
+      "path": "skills/agent-action-preview-builder/SKILL.md"
+    },
+    {
+      "name": "agent-approval-packet-assembler",
+      "title": "Agent approval packet assembler",
+      "path": "skills/agent-approval-packet-assembler/SKILL.md"
+    },
+    {
+      "name": "agent-retry-budget-setter",
+      "title": "Agent retry budget setter",
+      "path": "skills/agent-retry-budget-setter/SKILL.md"
+    },
+    {
+      "name": "tool-permission-receipt-recorder",
+      "title": "Tool permission receipt recorder",
+      "path": "skills/tool-permission-receipt-recorder/SKILL.md"
+    }
+  ]
+}

@@ -183,3 +183,49 @@ Skills:
 - `sequence-and-channel-compliance-qa`
 - `reply-triage-and-safe-follow-up-builder`
 - `response-rate-experiment-and-learning-loop`
+
+## Agent Workflow Control Review Skill
+
+- Slug: `agent-workflow-control-review`
+- Skills: 7
+- Download: [`dist/agent-workflow-control-review.zip`](dist/agent-workflow-control-review.zip)
+
+Skills:
+
+- `skill-input-contract-writer`
+- `agent-source-labeler`
+- `agent-acceptance-criteria-setter`
+- `agent-action-preview-builder`
+- `agent-approval-packet-assembler`
+- `agent-retry-budget-setter`
+- `tool-permission-receipt-recorder`
+
+## Agent Tool Authority Review Skill
+
+- Slug: `agent-tool-authority-review`
+- Skills: 7
+- Download: [`dist/agent-tool-authority-review.zip`](dist/agent-tool-authority-review.zip)
+
+Skills:
+
+- `agent-context-quarantine-mapper`
+- `agent-permission-card-writer`
+- `agent-service-identity-assigner`
+- `agent-capability-diff-reviewer`
+- `tool-result-influence-boundary-mapper`
+- `browser-agent-profile-isolator`
+- `github-agent-input-reviewer`
+
+## AI Workflow Eval and Lifecycle Review Skill
+
+- Slug: `ai-workflow-eval-and-lifecycle-review`
+- Skills: 5
+- Download: [`dist/ai-workflow-eval-and-lifecycle-review.zip`](dist/ai-workflow-eval-and-lifecycle-review.zip)
+
+Skills:
+
+- `negative-skill-eval-writer`
+- `prompt-injection-workflow-tester`
+- `ai-workflow-regression-runner`
+- `skill-lifecycle-reviewer`
+- `self-review-writeback-governor`
