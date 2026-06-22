@@ -1,0 +1,36 @@
+{
+  "title": "AI Workflow Eval and Lifecycle Review Skill",
+  "slug": "ai-workflow-eval-and-lifecycle-review",
+  "owner": "AI Operations, Enablement, and Workflow Owners",
+  "version": "0.1",
+  "status": "draft-ready-for-review",
+  "format": "vibesec-gtm-skill-skill-folder-v1",
+  "skill_format": "Agent Skills directory with case-sensitive SKILL.md",
+  "skills": [
+    {
+      "name": "negative-skill-eval-writer",
+      "title": "Negative skill eval writer",
+      "path": "skills/negative-skill-eval-writer/SKILL.md"
+    },
+    {
+      "name": "prompt-injection-workflow-tester",
+      "title": "Prompt injection workflow tester",
+      "path": "skills/prompt-injection-workflow-tester/SKILL.md"
+    },
+    {
+      "name": "ai-workflow-regression-runner",
+      "title": "AI workflow regression runner",
+      "path": "skills/ai-workflow-regression-runner/SKILL.md"
+    },
+    {
+      "name": "skill-lifecycle-reviewer",
+      "title": "Skill lifecycle reviewer",
+      "path": "skills/skill-lifecycle-reviewer/SKILL.md"
+    },
+    {
+      "name": "self-review-writeback-governor",
+      "title": "Self-review writeback governor",
+      "path": "skills/self-review-writeback-governor/SKILL.md"
+    }
+  ]
+}

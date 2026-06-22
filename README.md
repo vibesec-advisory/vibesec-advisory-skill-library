@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/vibesec-advisory/vibesec-advisory-skill-library/actions/workflows/ci.yml/badge.svg)](https://github.com/vibesec-advisory/vibesec-advisory-skill-library/actions/workflows/ci.yml)
 
-Free AI workflow skill libraries for GTM teams.
+Free AI workflow skill libraries for GTM teams and AI operators.
 
 These are not prompt dumps. They are role-based skill libraries for repeatable GTM workflows with clear inputs, review steps, approval gates, output schemas, and eval coverage.
 
@@ -10,8 +10,8 @@ The public libraries are generic by design. They show what good AI workflow skil
 
 ## What is included
 
-- 13 GTM AI workflow skill libraries
-- 67 Agent Skills with `SKILL.md` files
+- 16 AI workflow skill libraries
+- 86 Agent Skills with `SKILL.md` files
 - Shared safety, output schema, and skill context references
 - Source markdown for editing and regeneration
 - Zip artifacts for direct download
@@ -33,6 +33,9 @@ The public libraries are generic by design. They show what good AI workflow skil
 11. Marketing Ops Campaign QA
 12. Sales Enablement Playbook Refresh
 13. Outbound BDR Response Learning
+14. Agent Workflow Control Review
+15. Agent Tool Authority Review
+16. AI Workflow Eval and Lifecycle Review
 
 See [`SKILL_CATALOG.md`](SKILL_CATALOG.md) for the full catalog.
 
