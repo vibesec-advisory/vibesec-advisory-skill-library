@@ -10,8 +10,8 @@ The public libraries are generic by design. They show what good AI workflow skil
 
 ## What is included
 
-- 16 AI workflow skill libraries
-- 86 Agent Skills with `SKILL.md` files
+- 17 AI workflow skill libraries
+- 91 Agent Skills with `SKILL.md` files
 - Shared safety, output schema, and skill context references
 - Source markdown for editing and regeneration
 - Zip artifacts for direct download
@@ -36,6 +36,7 @@ The public libraries are generic by design. They show what good AI workflow skil
 14. Agent Workflow Control Review
 15. Agent Tool Authority Review
 16. AI Workflow Eval and Lifecycle Review
+17. Agent Boundary Control Review
 
 See [`SKILL_CATALOG.md`](SKILL_CATALOG.md) for the full catalog.
 

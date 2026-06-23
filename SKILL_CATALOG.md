@@ -229,3 +229,17 @@ Skills:
 - `ai-workflow-regression-runner`
 - `skill-lifecycle-reviewer`
 - `self-review-writeback-governor`
+
+## Agent Boundary Control Review Skill
+
+- Slug: `agent-boundary-control-review`
+- Skills: 5
+- Download: [`dist/agent-boundary-control-review.zip`](dist/agent-boundary-control-review.zip)
+
+Skills:
+
+- `multimodal-evidence-boundary-mapper`
+- `agent-egress-allowlist-reviewer`
+- `agent-trace-redaction-gatekeeper`
+- `agent-assumption-register-writer`
+- `agent-boundary-change-reviewer`
