@@ -1,7 +1,7 @@
 # Marketing Ops Campaign QA Skill
 
-Owner: Marketing Operations  
-Version: 0.1  
+Owner: Marketing Operations
+Version: 0.1
 Status: draft-ready-for-review
 
 This folder is a zip-ready VibeSec GTM AI Workflow Skill. It contains multiple Anthropic-style Agent Skill directories, not one mega-prompt.

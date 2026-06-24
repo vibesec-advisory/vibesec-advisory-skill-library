@@ -1,7 +1,7 @@
 # Renewal Risk Brief Skill
 
-Owner: Account Management, Customer Success, and Revenue Leadership  
-Version: 0.1  
+Owner: Account Management, Customer Success, and Revenue Leadership
+Version: 0.1
 Status: draft-ready-for-review
 
 This folder is a zip-ready VibeSec GTM AI Workflow Skill. It contains multiple Anthropic-style Agent Skill directories, not one mega-prompt.

@@ -283,8 +283,8 @@ def skill_readme(meta: dict[str, str], skill_slug: str, skills: list[dict[str, o
     lines = "\n".join(f"- `{s['slug']}`: {s['title']}" for s in skills)
     return f"""# {title}
 
-Owner: {owner}  
-Version: {meta.get('version', '0.1')}  
+Owner: {owner}
+Version: {meta.get('version', '0.1')}
 Status: {meta.get('status', 'draft-ready-for-review')}
 
 This folder is a zip-ready VibeSec GTM AI Workflow Skill. It contains multiple Anthropic-style Agent Skill directories, not one mega-prompt.
