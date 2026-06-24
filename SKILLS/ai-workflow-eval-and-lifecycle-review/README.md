@@ -1,7 +1,7 @@
 # AI Workflow Eval and Lifecycle Review Skill
 
-Owner: AI Operations, Enablement, and Workflow Owners  
-Version: 0.1  
+Owner: AI Operations, Enablement, and Workflow Owners
+Version: 0.1
 Status: draft-ready-for-review
 
 This folder is a zip-ready VibeSec GTM AI Workflow Skill. It contains multiple Anthropic-style Agent Skill directories, not one mega-prompt.

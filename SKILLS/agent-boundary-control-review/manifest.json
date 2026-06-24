@@ -1,0 +1,36 @@
+{
+  "title": "Agent Boundary Control Review Skill",
+  "slug": "agent-boundary-control-review",
+  "owner": "AI Operations, Security, and Workflow Owners",
+  "version": "0.1",
+  "status": "draft-ready-for-review",
+  "format": "vibesec-gtm-skill-skill-folder-v1",
+  "skill_format": "Agent Skills directory with case-sensitive SKILL.md",
+  "skills": [
+    {
+      "name": "multimodal-evidence-boundary-mapper",
+      "title": "Multimodal evidence boundary mapper",
+      "path": "skills/multimodal-evidence-boundary-mapper/SKILL.md"
+    },
+    {
+      "name": "agent-egress-allowlist-reviewer",
+      "title": "Agent egress allowlist reviewer",
+      "path": "skills/agent-egress-allowlist-reviewer/SKILL.md"
+    },
+    {
+      "name": "agent-trace-redaction-gatekeeper",
+      "title": "Agent trace redaction gatekeeper",
+      "path": "skills/agent-trace-redaction-gatekeeper/SKILL.md"
+    },
+    {
+      "name": "agent-assumption-register-writer",
+      "title": "Agent assumption register writer",
+      "path": "skills/agent-assumption-register-writer/SKILL.md"
+    },
+    {
+      "name": "agent-boundary-change-reviewer",
+      "title": "Agent boundary change reviewer",
+      "path": "skills/agent-boundary-change-reviewer/SKILL.md"
+    }
+  ]
+}

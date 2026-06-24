@@ -1,7 +1,7 @@
 # Security Questionnaire Triage Skill
 
-Owner: Sales Engineering, Security, and Revenue Operations  
-Version: 0.1  
+Owner: Sales Engineering, Security, and Revenue Operations
+Version: 0.1
 Status: draft-ready-for-review
 
 This folder is a zip-ready VibeSec GTM AI Workflow Skill. It contains multiple Anthropic-style Agent Skill directories, not one mega-prompt.
