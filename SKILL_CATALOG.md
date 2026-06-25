@@ -243,3 +243,17 @@ Skills:
 - `agent-trace-redaction-gatekeeper`
 - `agent-assumption-register-writer`
 - `agent-boundary-change-reviewer`
+
+## Workflow Readiness Review Skill
+
+- Slug: `workflow-readiness-review`
+- Skills: 5
+- Download: [`dist/workflow-readiness-review.zip`](dist/workflow-readiness-review.zip)
+
+Skills:
+
+- `ai-task-allocation-mapper`
+- `workflow-calibration-set-builder`
+- `structured-output-review-surface-mapper`
+- `prompt-review-checkpoint-writer`
+- `agent-resume-checkpoint-reviewer`

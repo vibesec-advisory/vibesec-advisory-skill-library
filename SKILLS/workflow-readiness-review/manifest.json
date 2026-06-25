@@ -1,0 +1,36 @@
+{
+  "title": "Workflow Readiness Review Skill",
+  "slug": "workflow-readiness-review",
+  "owner": "AI Operations, Security, Enablement, and Workflow Owners",
+  "version": "0.1",
+  "status": "draft-ready-for-review",
+  "format": "vibesec-gtm-skill-skill-folder-v1",
+  "skill_format": "Agent Skills directory with case-sensitive SKILL.md",
+  "skills": [
+    {
+      "name": "ai-task-allocation-mapper",
+      "title": "AI task allocation mapper",
+      "path": "skills/ai-task-allocation-mapper/SKILL.md"
+    },
+    {
+      "name": "workflow-calibration-set-builder",
+      "title": "Workflow calibration set builder",
+      "path": "skills/workflow-calibration-set-builder/SKILL.md"
+    },
+    {
+      "name": "structured-output-review-surface-mapper",
+      "title": "Structured output review surface mapper",
+      "path": "skills/structured-output-review-surface-mapper/SKILL.md"
+    },
+    {
+      "name": "prompt-review-checkpoint-writer",
+      "title": "Prompt review checkpoint writer",
+      "path": "skills/prompt-review-checkpoint-writer/SKILL.md"
+    },
+    {
+      "name": "agent-resume-checkpoint-reviewer",
+      "title": "Agent resume checkpoint reviewer",
+      "path": "skills/agent-resume-checkpoint-reviewer/SKILL.md"
+    }
+  ]
+}
