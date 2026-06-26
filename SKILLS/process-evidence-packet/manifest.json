@@ -1,0 +1,36 @@
+{
+  "title": "Process Evidence Packet Skill",
+  "slug": "process-evidence-packet",
+  "owner": "Workflow Owners, AI Operations, RevOps, Security, and Enablement",
+  "version": "0.1",
+  "status": "draft-ready-for-review",
+  "format": "vibesec-gtm-skill-skill-folder-v1",
+  "skill_format": "Agent Skills directory with case-sensitive SKILL.md",
+  "skills": [
+    {
+      "name": "process-evidence-intake-reviewer",
+      "title": "Process evidence intake reviewer",
+      "path": "skills/process-evidence-intake-reviewer/SKILL.md"
+    },
+    {
+      "name": "as-is-process-mapper",
+      "title": "As-is process mapper",
+      "path": "skills/as-is-process-mapper/SKILL.md"
+    },
+    {
+      "name": "variant-and-rework-reviewer",
+      "title": "Variant and rework reviewer",
+      "path": "skills/variant-and-rework-reviewer/SKILL.md"
+    },
+    {
+      "name": "baseline-metric-packet-builder",
+      "title": "Baseline metric packet builder",
+      "path": "skills/baseline-metric-packet-builder/SKILL.md"
+    },
+    {
+      "name": "ai-intervention-router",
+      "title": "AI intervention router",
+      "path": "skills/ai-intervention-router/SKILL.md"
+    }
+  ]
+}

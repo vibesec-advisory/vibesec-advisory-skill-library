@@ -257,3 +257,17 @@ Skills:
 - `structured-output-review-surface-mapper`
 - `prompt-review-checkpoint-writer`
 - `agent-resume-checkpoint-reviewer`
+
+## Process Evidence Packet Skill
+
+- Slug: `process-evidence-packet`
+- Skills: 5
+- Download: [`dist/process-evidence-packet.zip`](dist/process-evidence-packet.zip)
+
+Skills:
+
+- `process-evidence-intake-reviewer`
+- `as-is-process-mapper`
+- `variant-and-rework-reviewer`
+- `baseline-metric-packet-builder`
+- `ai-intervention-router`
