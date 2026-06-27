@@ -271,3 +271,17 @@ Skills:
 - `variant-and-rework-reviewer`
 - `baseline-metric-packet-builder`
 - `ai-intervention-router`
+
+## Agent Launch Evidence Review Skill
+
+- Slug: `agent-launch-evidence-review`
+- Skills: 5
+- Download: [`dist/agent-launch-evidence-review.zip`](dist/agent-launch-evidence-review.zip)
+
+Skills:
+
+- `accountability-map-builder`
+- `tool-permission-manifest-writer`
+- `disagreement-log-keeper`
+- `runnable-example-set-builder`
+- `launch-evidence-gatekeeper`

@@ -1,0 +1,36 @@
+{
+  "title": "Agent Launch Evidence Review Skill",
+  "slug": "agent-launch-evidence-review",
+  "owner": "Workflow Owners, AI Operations, Security, Enablement, and Platform",
+  "version": "0.1",
+  "status": "draft-ready-for-review",
+  "format": "vibesec-gtm-skill-skill-folder-v1",
+  "skill_format": "Agent Skills directory with case-sensitive SKILL.md",
+  "skills": [
+    {
+      "name": "accountability-map-builder",
+      "title": "Accountability map builder",
+      "path": "skills/accountability-map-builder/SKILL.md"
+    },
+    {
+      "name": "tool-permission-manifest-writer",
+      "title": "Tool permission manifest writer",
+      "path": "skills/tool-permission-manifest-writer/SKILL.md"
+    },
+    {
+      "name": "disagreement-log-keeper",
+      "title": "Disagreement log keeper",
+      "path": "skills/disagreement-log-keeper/SKILL.md"
+    },
+    {
+      "name": "runnable-example-set-builder",
+      "title": "Runnable example set builder",
+      "path": "skills/runnable-example-set-builder/SKILL.md"
+    },
+    {
+      "name": "launch-evidence-gatekeeper",
+      "title": "Launch evidence gatekeeper",
+      "path": "skills/launch-evidence-gatekeeper/SKILL.md"
+    }
+  ]
+}
