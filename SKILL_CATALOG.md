@@ -285,3 +285,17 @@ Skills:
 - `disagreement-log-keeper`
 - `runnable-example-set-builder`
 - `launch-evidence-gatekeeper`
+
+## AI Judge Review Gates Skill
+
+- Slug: `ai-judge-review-gates`
+- Skills: 5
+- Download: [`dist/ai-judge-review-gates.zip`](dist/ai-judge-review-gates.zip)
+
+Skills:
+
+- `judge-rubric-writer`
+- `judge-evidence-boundary-mapper`
+- `bias-probe-set-builder`
+- `judge-disagreement-router`
+- `judge-authority-gatekeeper`

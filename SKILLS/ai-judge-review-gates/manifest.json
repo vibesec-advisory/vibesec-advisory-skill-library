@@ -1,0 +1,36 @@
+{
+  "title": "AI Judge Review Gates Skill",
+  "slug": "ai-judge-review-gates",
+  "owner": "Workflow Owners, AI Operations, Security, Enablement, and Quality Review",
+  "version": "0.1",
+  "status": "draft-ready-for-review",
+  "format": "vibesec-gtm-skill-skill-folder-v1",
+  "skill_format": "Agent Skills directory with case-sensitive SKILL.md",
+  "skills": [
+    {
+      "name": "judge-rubric-writer",
+      "title": "Judge rubric writer",
+      "path": "skills/judge-rubric-writer/SKILL.md"
+    },
+    {
+      "name": "judge-evidence-boundary-mapper",
+      "title": "Judge evidence boundary mapper",
+      "path": "skills/judge-evidence-boundary-mapper/SKILL.md"
+    },
+    {
+      "name": "bias-probe-set-builder",
+      "title": "Bias probe set builder",
+      "path": "skills/bias-probe-set-builder/SKILL.md"
+    },
+    {
+      "name": "judge-disagreement-router",
+      "title": "Judge disagreement router",
+      "path": "skills/judge-disagreement-router/SKILL.md"
+    },
+    {
+      "name": "judge-authority-gatekeeper",
+      "title": "Judge authority gatekeeper",
+      "path": "skills/judge-authority-gatekeeper/SKILL.md"
+    }
+  ]
+}
