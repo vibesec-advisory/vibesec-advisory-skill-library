@@ -299,3 +299,17 @@ Skills:
 - `bias-probe-set-builder`
 - `judge-disagreement-router`
 - `judge-authority-gatekeeper`
+
+## AI Adoption Workflow Redesign Skill
+
+- Slug: `ai-adoption-workflow-redesign`
+- Skills: 5
+- Download: [`dist/ai-adoption-workflow-redesign.zip`](dist/ai-adoption-workflow-redesign.zip)
+
+Skills:
+
+- `adoption-plateau-diagnoser`
+- `workflow-fit-selector`
+- `business-metric-baseline-reframer`
+- `redesigned-workflow-embedder`
+- `visible-speed-pilot-planner`

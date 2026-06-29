@@ -1,0 +1,36 @@
+{
+  "title": "AI Adoption Workflow Redesign Skill",
+  "slug": "ai-adoption-workflow-redesign",
+  "owner": "Workflow Owners, Enablement, RevOps, AI Operations, Security, and Executive Sponsors",
+  "version": "0.1",
+  "status": "draft-ready-for-review",
+  "format": "vibesec-gtm-skill-skill-folder-v1",
+  "skill_format": "Agent Skills directory with case-sensitive SKILL.md",
+  "skills": [
+    {
+      "name": "adoption-plateau-diagnoser",
+      "title": "Adoption plateau diagnoser",
+      "path": "skills/adoption-plateau-diagnoser/SKILL.md"
+    },
+    {
+      "name": "workflow-fit-selector",
+      "title": "Workflow fit selector",
+      "path": "skills/workflow-fit-selector/SKILL.md"
+    },
+    {
+      "name": "business-metric-baseline-reframer",
+      "title": "Business metric baseline reframer",
+      "path": "skills/business-metric-baseline-reframer/SKILL.md"
+    },
+    {
+      "name": "redesigned-workflow-embedder",
+      "title": "Redesigned workflow embedder",
+      "path": "skills/redesigned-workflow-embedder/SKILL.md"
+    },
+    {
+      "name": "visible-speed-pilot-planner",
+      "title": "Visible-speed pilot planner",
+      "path": "skills/visible-speed-pilot-planner/SKILL.md"
+    }
+  ]
+}
