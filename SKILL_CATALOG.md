@@ -313,3 +313,17 @@ Skills:
 - `business-metric-baseline-reframer`
 - `redesigned-workflow-embedder`
 - `visible-speed-pilot-planner`
+
+## Tool Result Contract Review Skill
+
+- Slug: `tool-result-contract-review`
+- Skills: 5
+- Download: [`dist/tool-result-contract-review.zip`](dist/tool-result-contract-review.zip)
+
+Skills:
+
+- `tool-result-contract-writer`
+- `source-and-schema-validator`
+- `freshness-and-error-state-checker`
+- `allowed-influence-boundary-setter`
+- `result-review-gate-router`

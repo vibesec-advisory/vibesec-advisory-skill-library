@@ -1,0 +1,36 @@
+{
+  "title": "Tool Result Contract Review Skill",
+  "slug": "tool-result-contract-review",
+  "owner": "AI Operations, Security, Platform Engineering, and Workflow Owners",
+  "version": "0.1",
+  "status": "draft-ready-for-review",
+  "format": "vibesec-gtm-skill-skill-folder-v1",
+  "skill_format": "Agent Skills directory with case-sensitive SKILL.md",
+  "skills": [
+    {
+      "name": "tool-result-contract-writer",
+      "title": "Tool result contract writer",
+      "path": "skills/tool-result-contract-writer/SKILL.md"
+    },
+    {
+      "name": "source-and-schema-validator",
+      "title": "Source and schema validator",
+      "path": "skills/source-and-schema-validator/SKILL.md"
+    },
+    {
+      "name": "freshness-and-error-state-checker",
+      "title": "Freshness and error state checker",
+      "path": "skills/freshness-and-error-state-checker/SKILL.md"
+    },
+    {
+      "name": "allowed-influence-boundary-setter",
+      "title": "Allowed influence boundary setter",
+      "path": "skills/allowed-influence-boundary-setter/SKILL.md"
+    },
+    {
+      "name": "result-review-gate-router",
+      "title": "Result review gate router",
+      "path": "skills/result-review-gate-router/SKILL.md"
+    }
+  ]
+}
