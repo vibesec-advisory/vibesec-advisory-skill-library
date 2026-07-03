@@ -1,0 +1,36 @@
+{
+  "title": "Workflow Failure Label Review Skill",
+  "slug": "workflow-failure-label-review",
+  "owner": "AI Operations, Security, Platform Engineering, Workflow Owners, and RevOps",
+  "version": "0.1",
+  "status": "draft-ready-for-review",
+  "format": "vibesec-gtm-skill-skill-folder-v1",
+  "skill_format": "Agent Skills directory with case-sensitive SKILL.md",
+  "skills": [
+    {
+      "name": "failure-label-intake-reviewer",
+      "title": "Failure label intake reviewer",
+      "path": "skills/failure-label-intake-reviewer/SKILL.md"
+    },
+    {
+      "name": "symptom-and-root-cause-splitter",
+      "title": "Symptom and root-cause splitter",
+      "path": "skills/symptom-and-root-cause-splitter/SKILL.md"
+    },
+    {
+      "name": "invisible-failure-finder",
+      "title": "Invisible failure finder",
+      "path": "skills/invisible-failure-finder/SKILL.md"
+    },
+    {
+      "name": "checkpoint-route-mapper",
+      "title": "Checkpoint route mapper",
+      "path": "skills/checkpoint-route-mapper/SKILL.md"
+    },
+    {
+      "name": "eval-case-converter",
+      "title": "Eval case converter",
+      "path": "skills/eval-case-converter/SKILL.md"
+    }
+  ]
+}

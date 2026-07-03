@@ -341,3 +341,17 @@ Skills:
 - `memory-trust-and-influence-scorer`
 - `memory-expiry-and-rollback-planner`
 - `memory-poisoning-test-designer`
+
+## Workflow Failure Label Review Skill
+
+- Slug: `workflow-failure-label-review`
+- Skills: 5
+- Download: [`dist/workflow-failure-label-review.zip`](dist/workflow-failure-label-review.zip)
+
+Skills:
+
+- `failure-label-intake-reviewer`
+- `symptom-and-root-cause-splitter`
+- `invisible-failure-finder`
+- `checkpoint-route-mapper`
+- `eval-case-converter`
