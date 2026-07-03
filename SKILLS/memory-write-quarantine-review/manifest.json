@@ -1,0 +1,36 @@
+{
+  "title": "Memory Write Quarantine Review Skill",
+  "slug": "memory-write-quarantine-review",
+  "owner": "AI Operations, Security, Platform Engineering, and Workflow Owners",
+  "version": "0.1",
+  "status": "draft-ready-for-review",
+  "format": "vibesec-gtm-skill-skill-folder-v1",
+  "skill_format": "Agent Skills directory with case-sensitive SKILL.md",
+  "skills": [
+    {
+      "name": "memory-proposal-intake-reviewer",
+      "title": "Memory proposal intake reviewer",
+      "path": "skills/memory-proposal-intake-reviewer/SKILL.md"
+    },
+    {
+      "name": "memory-sensitivity-gatekeeper",
+      "title": "Memory sensitivity gatekeeper",
+      "path": "skills/memory-sensitivity-gatekeeper/SKILL.md"
+    },
+    {
+      "name": "memory-trust-and-influence-scorer",
+      "title": "Memory trust and influence scorer",
+      "path": "skills/memory-trust-and-influence-scorer/SKILL.md"
+    },
+    {
+      "name": "memory-expiry-and-rollback-planner",
+      "title": "Memory expiry and rollback planner",
+      "path": "skills/memory-expiry-and-rollback-planner/SKILL.md"
+    },
+    {
+      "name": "memory-poisoning-test-designer",
+      "title": "Memory poisoning test designer",
+      "path": "skills/memory-poisoning-test-designer/SKILL.md"
+    }
+  ]
+}

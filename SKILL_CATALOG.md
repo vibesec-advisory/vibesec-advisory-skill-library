@@ -327,3 +327,17 @@ Skills:
 - `freshness-and-error-state-checker`
 - `allowed-influence-boundary-setter`
 - `result-review-gate-router`
+
+## Memory Write Quarantine Review Skill
+
+- Slug: `memory-write-quarantine-review`
+- Skills: 5
+- Download: [`dist/memory-write-quarantine-review.zip`](dist/memory-write-quarantine-review.zip)
+
+Skills:
+
+- `memory-proposal-intake-reviewer`
+- `memory-sensitivity-gatekeeper`
+- `memory-trust-and-influence-scorer`
+- `memory-expiry-and-rollback-planner`
+- `memory-poisoning-test-designer`
