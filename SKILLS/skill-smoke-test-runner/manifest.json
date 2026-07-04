@@ -1,0 +1,36 @@
+{
+  "title": "Skill Smoke Test Runner Skill",
+  "slug": "skill-smoke-test-runner",
+  "owner": "AI Operations, Enablement, Security, Platform Engineering, Workflow Owners, and RevOps",
+  "version": "0.1",
+  "status": "draft-ready-for-review",
+  "format": "vibesec-gtm-skill-skill-folder-v1",
+  "skill_format": "Agent Skills directory with case-sensitive SKILL.md",
+  "skills": [
+    {
+      "name": "skill-intent-and-boundary-capturer",
+      "title": "Skill intent and boundary capturer",
+      "path": "skills/skill-intent-and-boundary-capturer/SKILL.md"
+    },
+    {
+      "name": "smoke-scenario-set-builder",
+      "title": "Smoke scenario set builder",
+      "path": "skills/smoke-scenario-set-builder/SKILL.md"
+    },
+    {
+      "name": "expected-output-rubric-writer",
+      "title": "Expected output rubric writer",
+      "path": "skills/expected-output-rubric-writer/SKILL.md"
+    },
+    {
+      "name": "smoke-run-reviewer",
+      "title": "Smoke run reviewer",
+      "path": "skills/smoke-run-reviewer/SKILL.md"
+    },
+    {
+      "name": "regression-promotion-gatekeeper",
+      "title": "Regression promotion gatekeeper",
+      "path": "skills/regression-promotion-gatekeeper/SKILL.md"
+    }
+  ]
+}

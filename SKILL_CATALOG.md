@@ -355,3 +355,17 @@ Skills:
 - `invisible-failure-finder`
 - `checkpoint-route-mapper`
 - `eval-case-converter`
+
+## Skill Smoke Test Runner Skill
+
+- Slug: `skill-smoke-test-runner`
+- Skills: 5
+- Download: [`dist/skill-smoke-test-runner.zip`](dist/skill-smoke-test-runner.zip)
+
+Skills:
+
+- `skill-intent-and-boundary-capturer`
+- `smoke-scenario-set-builder`
+- `expected-output-rubric-writer`
+- `smoke-run-reviewer`
+- `regression-promotion-gatekeeper`
