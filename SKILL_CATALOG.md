@@ -369,3 +369,17 @@ Skills:
 - `expected-output-rubric-writer`
 - `smoke-run-reviewer`
 - `regression-promotion-gatekeeper`
+
+## Confidence Calibration Review Skill
+
+- Slug: `confidence-calibration-review`
+- Skills: 5
+- Download: [`dist/confidence-calibration-review.zip`](dist/confidence-calibration-review.zip)
+
+Skills:
+
+- `action-authority-classifier`
+- `confidence-signal-recorder`
+- `baseline-comparison-planner`
+- `abstention-threshold-router`
+- `override-log-reviewer`

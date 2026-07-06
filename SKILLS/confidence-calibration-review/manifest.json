@@ -1,0 +1,36 @@
+{
+  "title": "Confidence Calibration Review Skill",
+  "slug": "confidence-calibration-review",
+  "owner": "AI Operations, Security, Platform Engineering, Workflow Owners, RevOps, and Enablement",
+  "version": "0.1",
+  "status": "draft-ready-for-review",
+  "format": "vibesec-gtm-skill-skill-folder-v1",
+  "skill_format": "Agent Skills directory with case-sensitive SKILL.md",
+  "skills": [
+    {
+      "name": "action-authority-classifier",
+      "title": "Action authority classifier",
+      "path": "skills/action-authority-classifier/SKILL.md"
+    },
+    {
+      "name": "confidence-signal-recorder",
+      "title": "Confidence signal recorder",
+      "path": "skills/confidence-signal-recorder/SKILL.md"
+    },
+    {
+      "name": "baseline-comparison-planner",
+      "title": "Baseline comparison planner",
+      "path": "skills/baseline-comparison-planner/SKILL.md"
+    },
+    {
+      "name": "abstention-threshold-router",
+      "title": "Abstention threshold router",
+      "path": "skills/abstention-threshold-router/SKILL.md"
+    },
+    {
+      "name": "override-log-reviewer",
+      "title": "Override log reviewer",
+      "path": "skills/override-log-reviewer/SKILL.md"
+    }
+  ]
+}
