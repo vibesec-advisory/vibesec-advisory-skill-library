@@ -383,3 +383,17 @@ Skills:
 - `baseline-comparison-planner`
 - `abstention-threshold-router`
 - `override-log-reviewer`
+
+## Shadow Mode Trace Review Skill
+
+- Slug: `shadow-mode-trace-review`
+- Skills: 5
+- Download: [`dist/shadow-mode-trace-review.zip`](dist/shadow-mode-trace-review.zip)
+
+Skills:
+
+- `trace-envelope-writer`
+- `no-write-action-simulator`
+- `policy-decision-logger`
+- `human-correction-reviewer`
+- `canary-promotion-gatekeeper`
