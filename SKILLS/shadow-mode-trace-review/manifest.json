@@ -1,0 +1,36 @@
+{
+  "title": "Shadow Mode Trace Review Skill",
+  "slug": "shadow-mode-trace-review",
+  "owner": "AI Operations, Security, Platform Engineering, Workflow Owners, RevOps, and Enablement",
+  "version": "0.1",
+  "status": "draft-ready-for-review",
+  "format": "vibesec-gtm-skill-skill-folder-v1",
+  "skill_format": "Agent Skills directory with case-sensitive SKILL.md",
+  "skills": [
+    {
+      "name": "trace-envelope-writer",
+      "title": "Trace envelope writer",
+      "path": "skills/trace-envelope-writer/SKILL.md"
+    },
+    {
+      "name": "no-write-action-simulator",
+      "title": "No-write action simulator",
+      "path": "skills/no-write-action-simulator/SKILL.md"
+    },
+    {
+      "name": "policy-decision-logger",
+      "title": "Policy decision logger",
+      "path": "skills/policy-decision-logger/SKILL.md"
+    },
+    {
+      "name": "human-correction-reviewer",
+      "title": "Human correction reviewer",
+      "path": "skills/human-correction-reviewer/SKILL.md"
+    },
+    {
+      "name": "canary-promotion-gatekeeper",
+      "title": "Canary promotion gatekeeper",
+      "path": "skills/canary-promotion-gatekeeper/SKILL.md"
+    }
+  ]
+}
