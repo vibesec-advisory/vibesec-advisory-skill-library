@@ -1,0 +1,36 @@
+{
+  "title": "Skill Maintenance Schedule Skill",
+  "slug": "skill-maintenance-schedule",
+  "owner": "AI Operations, Enablement, Workflow Owners, and Security",
+  "version": "0.1",
+  "status": "draft-ready-for-review",
+  "format": "vibesec-gtm-skill-skill-folder-v1",
+  "skill_format": "Agent Skills directory with case-sensitive SKILL.md",
+  "skills": [
+    {
+      "name": "maintenance-record-creator",
+      "title": "Maintenance record creator",
+      "path": "skills/maintenance-record-creator/SKILL.md"
+    },
+    {
+      "name": "dependency-drift-mapper",
+      "title": "Dependency drift mapper",
+      "path": "skills/dependency-drift-mapper/SKILL.md"
+    },
+    {
+      "name": "review-trigger-scheduler",
+      "title": "Review trigger scheduler",
+      "path": "skills/review-trigger-scheduler/SKILL.md"
+    },
+    {
+      "name": "lifecycle-decision-recorder",
+      "title": "Lifecycle decision recorder",
+      "path": "skills/lifecycle-decision-recorder/SKILL.md"
+    },
+    {
+      "name": "retirement-and-rollback-planner",
+      "title": "Retirement and rollback planner",
+      "path": "skills/retirement-and-rollback-planner/SKILL.md"
+    }
+  ]
+}
