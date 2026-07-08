@@ -397,3 +397,17 @@ Skills:
 - `policy-decision-logger`
 - `human-correction-reviewer`
 - `canary-promotion-gatekeeper`
+
+## Skill Maintenance Schedule Skill
+
+- Slug: `skill-maintenance-schedule`
+- Skills: 5
+- Download: [`dist/skill-maintenance-schedule.zip`](dist/skill-maintenance-schedule.zip)
+
+Skills:
+
+- `maintenance-record-creator`
+- `dependency-drift-mapper`
+- `review-trigger-scheduler`
+- `lifecycle-decision-recorder`
+- `retirement-and-rollback-planner`
