@@ -411,3 +411,17 @@ Skills:
 - `review-trigger-scheduler`
 - `lifecycle-decision-recorder`
 - `retirement-and-rollback-planner`
+
+## Prompt Mismatch Log Review Skill
+
+- Slug: `prompt-mismatch-log-review`
+- Skills: 5
+- Download: [`dist/prompt-mismatch-log-review.zip`](dist/prompt-mismatch-log-review.zip)
+
+Skills:
+
+- `mismatch-envelope-recorder`
+- `failure-label-splitter`
+- `clarification-route-chooser`
+- `regression-case-promoter`
+- `prompt-change-decision-recorder`

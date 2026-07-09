@@ -1,0 +1,36 @@
+{
+  "title": "Prompt Mismatch Log Review Skill",
+  "slug": "prompt-mismatch-log-review",
+  "owner": "AI Operations, Product, Enablement, Support, and Workflow Owners",
+  "version": "0.1",
+  "status": "draft-ready-for-review",
+  "format": "vibesec-gtm-skill-skill-folder-v1",
+  "skill_format": "Agent Skills directory with case-sensitive SKILL.md",
+  "skills": [
+    {
+      "name": "mismatch-envelope-recorder",
+      "title": "Mismatch envelope recorder",
+      "path": "skills/mismatch-envelope-recorder/SKILL.md"
+    },
+    {
+      "name": "failure-label-splitter",
+      "title": "Failure label splitter",
+      "path": "skills/failure-label-splitter/SKILL.md"
+    },
+    {
+      "name": "clarification-route-chooser",
+      "title": "Clarification route chooser",
+      "path": "skills/clarification-route-chooser/SKILL.md"
+    },
+    {
+      "name": "regression-case-promoter",
+      "title": "Regression case promoter",
+      "path": "skills/regression-case-promoter/SKILL.md"
+    },
+    {
+      "name": "prompt-change-decision-recorder",
+      "title": "Prompt change decision recorder",
+      "path": "skills/prompt-change-decision-recorder/SKILL.md"
+    }
+  ]
+}
