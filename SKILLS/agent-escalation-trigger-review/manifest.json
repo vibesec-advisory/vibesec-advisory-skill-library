@@ -1,0 +1,36 @@
+{
+  "title": "Agent Escalation Trigger Review Skill",
+  "slug": "agent-escalation-trigger-review",
+  "owner": "AI Operations, Security, Workflow Owners, and Tooling Owners",
+  "version": "0.1",
+  "status": "draft-ready-for-review",
+  "format": "vibesec-gtm-skill-skill-folder-v1",
+  "skill_format": "Agent Skills directory with case-sensitive SKILL.md",
+  "skills": [
+    {
+      "name": "exception-trigger-intake-reviewer",
+      "title": "Exception trigger intake reviewer",
+      "path": "skills/exception-trigger-intake-reviewer/SKILL.md"
+    },
+    {
+      "name": "action-risk-route-mapper",
+      "title": "Action risk route mapper",
+      "path": "skills/action-risk-route-mapper/SKILL.md"
+    },
+    {
+      "name": "structured-clarification-ask-builder",
+      "title": "Structured clarification ask builder",
+      "path": "skills/structured-clarification-ask-builder/SKILL.md"
+    },
+    {
+      "name": "fail-closed-evidence-packet-writer",
+      "title": "Fail-closed evidence packet writer",
+      "path": "skills/fail-closed-evidence-packet-writer/SKILL.md"
+    },
+    {
+      "name": "resume-rule-and-owner-recorder",
+      "title": "Resume rule and owner recorder",
+      "path": "skills/resume-rule-and-owner-recorder/SKILL.md"
+    }
+  ]
+}

@@ -425,3 +425,17 @@ Skills:
 - `clarification-route-chooser`
 - `regression-case-promoter`
 - `prompt-change-decision-recorder`
+
+## Agent Escalation Trigger Review Skill
+
+- Slug: `agent-escalation-trigger-review`
+- Skills: 5
+- Download: [`dist/agent-escalation-trigger-review.zip`](dist/agent-escalation-trigger-review.zip)
+
+Skills:
+
+- `exception-trigger-intake-reviewer`
+- `action-risk-route-mapper`
+- `structured-clarification-ask-builder`
+- `fail-closed-evidence-packet-writer`
+- `resume-rule-and-owner-recorder`
