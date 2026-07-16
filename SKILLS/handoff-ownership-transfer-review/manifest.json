@@ -1,0 +1,36 @@
+{
+  "title": "Handoff Ownership Transfer Review Skill",
+  "slug": "handoff-ownership-transfer-review",
+  "owner": "AI Operations, Workflow Owners, Security Reviewers, and Agent Orchestrator Owners",
+  "version": "0.1",
+  "status": "draft-ready-for-review",
+  "format": "vibesec-gtm-skill-skill-folder-v1",
+  "skill_format": "Agent Skills directory with case-sensitive SKILL.md",
+  "skills": [
+    {
+      "name": "ownership-handoff-packet-writer",
+      "title": "Ownership handoff packet writer",
+      "path": "skills/ownership-handoff-packet-writer/SKILL.md"
+    },
+    {
+      "name": "receiver-synthesis-gatekeeper",
+      "title": "Receiver synthesis gatekeeper",
+      "path": "skills/receiver-synthesis-gatekeeper/SKILL.md"
+    },
+    {
+      "name": "provenance-and-version-trace-mapper",
+      "title": "Provenance and version trace mapper",
+      "path": "skills/provenance-and-version-trace-mapper/SKILL.md"
+    },
+    {
+      "name": "authority-boundary-transfer-checker",
+      "title": "Authority boundary transfer checker",
+      "path": "skills/authority-boundary-transfer-checker/SKILL.md"
+    },
+    {
+      "name": "blocked-handoff-repair-router",
+      "title": "Blocked handoff repair router",
+      "path": "skills/blocked-handoff-repair-router/SKILL.md"
+    }
+  ]
+}
