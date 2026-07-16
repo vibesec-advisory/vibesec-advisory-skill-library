@@ -439,3 +439,17 @@ Skills:
 - `structured-clarification-ask-builder`
 - `fail-closed-evidence-packet-writer`
 - `resume-rule-and-owner-recorder`
+
+## Handoff Ownership Transfer Review Skill
+
+- Slug: `handoff-ownership-transfer-review`
+- Skills: 5
+- Download: [`dist/handoff-ownership-transfer-review.zip`](dist/handoff-ownership-transfer-review.zip)
+
+Skills:
+
+- `ownership-handoff-packet-writer`
+- `receiver-synthesis-gatekeeper`
+- `provenance-and-version-trace-mapper`
+- `authority-boundary-transfer-checker`
+- `blocked-handoff-repair-router`
