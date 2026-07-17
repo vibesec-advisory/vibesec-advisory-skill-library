@@ -453,3 +453,17 @@ Skills:
 - `provenance-and-version-trace-mapper`
 - `authority-boundary-transfer-checker`
 - `blocked-handoff-repair-router`
+
+## Agent Interruption Budget Review Skill
+
+- Slug: `agent-interruption-budget-review`
+- Skills: 5
+- Download: [`dist/agent-interruption-budget-review.zip`](dist/agent-interruption-budget-review.zip)
+
+Skills:
+
+- `interrupt-now-route-mapper`
+- `batch-review-queue-planner`
+- `shadow-mode-lane-setter`
+- `stop-condition-and-capacity-gatekeeper`
+- `review-signal-learning-loop`
