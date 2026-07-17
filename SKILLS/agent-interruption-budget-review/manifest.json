@@ -1,0 +1,36 @@
+{
+  "title": "Agent Interruption Budget Review Skill",
+  "slug": "agent-interruption-budget-review",
+  "owner": "AI Operations, Workflow Owners, Security Reviewers, and Human Review Queue Owners",
+  "version": "0.1",
+  "status": "draft-ready-for-review",
+  "format": "vibesec-gtm-skill-skill-folder-v1",
+  "skill_format": "Agent Skills directory with case-sensitive SKILL.md",
+  "skills": [
+    {
+      "name": "interrupt-now-route-mapper",
+      "title": "Interrupt-now route mapper",
+      "path": "skills/interrupt-now-route-mapper/SKILL.md"
+    },
+    {
+      "name": "batch-review-queue-planner",
+      "title": "Batch-review queue planner",
+      "path": "skills/batch-review-queue-planner/SKILL.md"
+    },
+    {
+      "name": "shadow-mode-lane-setter",
+      "title": "Shadow-mode lane setter",
+      "path": "skills/shadow-mode-lane-setter/SKILL.md"
+    },
+    {
+      "name": "stop-condition-and-capacity-gatekeeper",
+      "title": "Stop-condition and capacity gatekeeper",
+      "path": "skills/stop-condition-and-capacity-gatekeeper/SKILL.md"
+    },
+    {
+      "name": "review-signal-learning-loop",
+      "title": "Review-signal learning loop",
+      "path": "skills/review-signal-learning-loop/SKILL.md"
+    }
+  ]
+}
