@@ -467,3 +467,17 @@ Skills:
 - `shadow-mode-lane-setter`
 - `stop-condition-and-capacity-gatekeeper`
 - `review-signal-learning-loop`
+
+## Negative Authorization Test Review Skill
+
+- Slug: `negative-authorization-test-review`
+- Skills: 5
+- Download: [`dist/negative-authorization-test-review.zip`](dist/negative-authorization-test-review.zip)
+
+Skills:
+
+- `denied-path-matrix-writer`
+- `tool-policy-fixture-builder`
+- `prompt-injection-denial-scenario-writer`
+- `non-effect-verification-planner`
+- `authorization-regression-gatekeeper`

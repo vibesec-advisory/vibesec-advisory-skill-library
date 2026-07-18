@@ -1,0 +1,36 @@
+{
+  "title": "Negative Authorization Test Review Skill",
+  "slug": "negative-authorization-test-review",
+  "owner": "AI Operations, Security, Platform Owners, and Agent Tool Owners",
+  "version": "0.1",
+  "status": "draft-ready-for-review",
+  "format": "vibesec-gtm-skill-skill-folder-v1",
+  "skill_format": "Agent Skills directory with case-sensitive SKILL.md",
+  "skills": [
+    {
+      "name": "denied-path-matrix-writer",
+      "title": "Denied-path matrix writer",
+      "path": "skills/denied-path-matrix-writer/SKILL.md"
+    },
+    {
+      "name": "tool-policy-fixture-builder",
+      "title": "Tool policy fixture builder",
+      "path": "skills/tool-policy-fixture-builder/SKILL.md"
+    },
+    {
+      "name": "prompt-injection-denial-scenario-writer",
+      "title": "Prompt-injection denial scenario writer",
+      "path": "skills/prompt-injection-denial-scenario-writer/SKILL.md"
+    },
+    {
+      "name": "non-effect-verification-planner",
+      "title": "Non-effect verification planner",
+      "path": "skills/non-effect-verification-planner/SKILL.md"
+    },
+    {
+      "name": "authorization-regression-gatekeeper",
+      "title": "Authorization regression gatekeeper",
+      "path": "skills/authorization-regression-gatekeeper/SKILL.md"
+    }
+  ]
+}
