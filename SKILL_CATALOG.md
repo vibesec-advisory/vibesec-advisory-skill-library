@@ -481,3 +481,17 @@ Skills:
 - `prompt-injection-denial-scenario-writer`
 - `non-effect-verification-planner`
 - `authorization-regression-gatekeeper`
+
+## Agent Tool Permission Lease Review Skill
+
+- Slug: `agent-tool-permission-lease-review`
+- Skills: 5
+- Download: [`dist/agent-tool-permission-lease-review.zip`](dist/agent-tool-permission-lease-review.zip)
+
+Skills:
+
+- `permission-lease-record-writer`
+- `expiry-and-closure-condition-mapper`
+- `lease-renewal-request-router`
+- `stale-authority-replay-tester`
+- `revocation-and-audit-gatekeeper`

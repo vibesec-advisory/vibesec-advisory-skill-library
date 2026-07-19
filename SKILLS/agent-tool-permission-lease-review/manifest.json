@@ -1,0 +1,36 @@
+{
+  "title": "Agent Tool Permission Lease Review Skill",
+  "slug": "agent-tool-permission-lease-review",
+  "owner": "AI Operations, Security Reviewers, Platform Owners, and Agent Tool Owners",
+  "version": "0.1",
+  "status": "draft-ready-for-review",
+  "format": "vibesec-gtm-skill-skill-folder-v1",
+  "skill_format": "Agent Skills directory with case-sensitive SKILL.md",
+  "skills": [
+    {
+      "name": "permission-lease-record-writer",
+      "title": "Permission lease record writer",
+      "path": "skills/permission-lease-record-writer/SKILL.md"
+    },
+    {
+      "name": "expiry-and-closure-condition-mapper",
+      "title": "Expiry and closure condition mapper",
+      "path": "skills/expiry-and-closure-condition-mapper/SKILL.md"
+    },
+    {
+      "name": "lease-renewal-request-router",
+      "title": "Lease renewal request router",
+      "path": "skills/lease-renewal-request-router/SKILL.md"
+    },
+    {
+      "name": "stale-authority-replay-tester",
+      "title": "Stale authority replay tester",
+      "path": "skills/stale-authority-replay-tester/SKILL.md"
+    },
+    {
+      "name": "revocation-and-audit-gatekeeper",
+      "title": "Revocation and audit gatekeeper",
+      "path": "skills/revocation-and-audit-gatekeeper/SKILL.md"
+    }
+  ]
+}
