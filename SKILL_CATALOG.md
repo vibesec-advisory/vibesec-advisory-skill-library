@@ -495,3 +495,17 @@ Skills:
 - `lease-renewal-request-router`
 - `stale-authority-replay-tester`
 - `revocation-and-audit-gatekeeper`
+
+## Agent Degraded Mode Review Skill
+
+- Slug: `agent-degraded-mode-review`
+- Skills: 5
+- Download: [`dist/agent-degraded-mode-review.zip`](dist/agent-degraded-mode-review.zip)
+
+Skills:
+
+- `degraded-mode-state-record-writer`
+- `authority-reduction-route-mapper`
+- `queue-and-evidence-retention-planner`
+- `recovery-and-upgrade-gatekeeper`
+- `degraded-mode-drill-runner`
