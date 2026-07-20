@@ -1,0 +1,36 @@
+{
+  "title": "Agent Degraded Mode Review Skill",
+  "slug": "agent-degraded-mode-review",
+  "owner": "AI Operations, Security Reviewers, Platform Owners, and Agent Workflow Owners",
+  "version": "0.1",
+  "status": "draft-ready-for-review",
+  "format": "vibesec-gtm-skill-skill-folder-v1",
+  "skill_format": "Agent Skills directory with case-sensitive SKILL.md",
+  "skills": [
+    {
+      "name": "degraded-mode-state-record-writer",
+      "title": "Degraded mode state record writer",
+      "path": "skills/degraded-mode-state-record-writer/SKILL.md"
+    },
+    {
+      "name": "authority-reduction-route-mapper",
+      "title": "Authority reduction route mapper",
+      "path": "skills/authority-reduction-route-mapper/SKILL.md"
+    },
+    {
+      "name": "queue-and-evidence-retention-planner",
+      "title": "Queue and evidence retention planner",
+      "path": "skills/queue-and-evidence-retention-planner/SKILL.md"
+    },
+    {
+      "name": "recovery-and-upgrade-gatekeeper",
+      "title": "Recovery and upgrade gatekeeper",
+      "path": "skills/recovery-and-upgrade-gatekeeper/SKILL.md"
+    },
+    {
+      "name": "degraded-mode-drill-runner",
+      "title": "Degraded-mode drill runner",
+      "path": "skills/degraded-mode-drill-runner/SKILL.md"
+    }
+  ]
+}
